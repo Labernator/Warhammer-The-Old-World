@@ -1794,6 +1794,9 @@
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="floor" value="0" field="0c0a-c4bc-659a-f54a">
+          <comment>-1 would mean unlimited</comment>
+        </modifier>
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Stone Troll Mobs" hidden="false" id="fbb1-36d1-3f29-dda1" type="selectionEntry" targetId="7255-5510-3bf2-87a6">
@@ -2017,6 +2020,9 @@
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
+        </modifier>
+        <modifier type="floor" value="0" field="6a53-7719-7122-6a7e">
+          <comment>-1 would mean unlimited</comment>
         </modifier>
       </modifiers>
     </entryLink>
@@ -2243,6 +2249,9 @@
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
           </conditions>
+        </modifier>
+        <modifier type="floor" value="0" field="103e-ac76-427f-51da">
+          <comment>-1 would mean unlimited</comment>
         </modifier>
       </modifiers>
     </entryLink>
