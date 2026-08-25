@@ -1745,6 +1745,18 @@ When rolling To Wound, the target number is the same as the armour value of the
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Infernal Ironsworn" hidden="false" id="e1587e88-e4db0932" collective="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="fd54-f892-0ef6-eb2a"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="fd54-f892-0ef6-eb2a">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Infernal Ironsworn" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="87f0638e-c1b2e798">
           <characteristics>
@@ -1781,16 +1793,7 @@ When rolling To Wound, the target number is the same as the armour value of the
           </entryLinks>
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="990789c3-dd4266f1"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="fb4b-2d4f-038c-bf98"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="fb4b-2d4f-038c-bf98">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <categoryLinks>
             <categoryLink name="Heavy Infantry" hidden="false" id="97d8-c14b-6114-16e4" targetId="ca7e-d004-ccde-caf3" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="ae8c-97de-fcbd-a4c0" targetId="may-have-armour"/>
@@ -1931,6 +1934,9 @@ When rolling To Wound, the target number is the same as the armour value of the
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Infernal Guard" hidden="false" id="f61860f4-34e371fe" collective="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="2d9e-17ed-f8aa-fdd2"/>
+      </constraints>
       <profiles>
         <profile name="Infernal Guard" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="b74329d2-82a2131c">
           <characteristics>
@@ -1967,7 +1973,6 @@ When rolling To Wound, the target number is the same as the armour value of the
           </entryLinks>
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="d943b4bf-c168facd"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="1947-dbcf-15be-7b75"/>
           </constraints>
           <categoryLinks>
             <categoryLink name="Heavy Infantry" hidden="false" id="6397-e3da-d610-310b" targetId="ca7e-d004-ccde-caf3" primary="false"/>
@@ -1978,12 +1983,6 @@ When rolling To Wound, the target number is the same as the armour value of the
             <modifier type="set" value="5" field="d943b4bf-c168facd">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="8ab5-cf38-8aff-d539" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="20" field="1947-dbcf-15be-7b75">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2170,9 +2169,28 @@ When rolling To Wound, the target number is the same as the armour value of the
             <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="a7b30e65-c19e35b" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="0" field="2d9e-17ed-f8aa-fdd2">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="K’daai Fireborn" hidden="false" id="49576b8c-26b4cbd6" collective="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="4f93-8eb4-0722-08fc"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="4f93-8eb4-0722-08fc">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="5c55-f9d6-b181-92f8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="K’daai Fireborn" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="2c631caa-f10d0f54">
           <characteristics>
@@ -2210,16 +2228,7 @@ When rolling To Wound, the target number is the same as the armour value of the
           </entryLinks>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="493d8ee1-e568b2b7"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="a11d-f60d-e5b1-0f5f"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="6" field="a11d-f60d-e5b1-0f5f">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <categoryLinks>
             <categoryLink name="Monstrous Infantry" hidden="false" id="b280-ea34-fcb0-29fb" targetId="5c55-f9d6-b181-92f8" primary="false"/>
           </categoryLinks>
@@ -2304,6 +2313,18 @@ When rolling To Wound, the target number is the same as the armour value of the
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Hobgoblin Cutthroats" hidden="false" id="1dcb4a75-35fdf76b" collective="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="0a35-5def-b75e-ce11"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="0a35-5def-b75e-ce11">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Hobgoblin Cutthroats" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="3b0ec193-1f02ec41">
           <characteristics>
@@ -2351,16 +2372,7 @@ When rolling To Wound, the target number is the same as the armour value of the
           </selectionEntryGroups>
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="8394720c-d5d59e56"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="bf1b-db09-286d-9127"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="bf1b-db09-286d-9127">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="988f-680b-951-d54c" targetId="f3f7-ca43-674e-115f" primary="false"/>
             <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="8ffe-7c06-827d-2878" targetId="may-have-shield"/>
@@ -2439,6 +2451,18 @@ When rolling To Wound, the target number is the same as the armour value of the
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Sneaky Gits" hidden="false" id="c6225928-49d10ed2" collective="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="6a72-e800-7251-063b"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="6a72-e800-7251-063b">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Sneaky Gits" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="b3f8722e-65746b38">
           <characteristics>
@@ -2475,16 +2499,7 @@ When rolling To Wound, the target number is the same as the armour value of the
           </entryLinks>
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="ce17864a-5a01f574"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="d7ad-eac5-70f1-cf8a"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="d7ad-eac5-70f1-cf8a">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="5808-6097-260d-fa33" targetId="f3f7-ca43-674e-115f" primary="false"/>
           </categoryLinks>
@@ -2545,6 +2560,9 @@ When rolling To Wound, the target number is the same as the armour value of the
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Hobgoblin Wolf Riders" hidden="false" id="a6507dd1-a0a8a527" collective="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="e3db-28a6-c81d-d063"/>
+      </constraints>
       <profiles>
         <profile name="Hobgoblin Wolf Riders" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="342f7937-97d2f005">
           <characteristics>
@@ -2582,16 +2600,7 @@ When rolling To Wound, the target number is the same as the armour value of the
           </entryLinks>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="6987de6e-50a67578"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="dc7b-f9b4-1418-4632"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="10" field="dc7b-f9b4-1418-4632">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <categoryLinks>
             <categoryLink name="Light Cavalry" hidden="false" id="7d91-47a3-2af-511c" targetId="600c-7d08-5be1-fe0c" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="63ec-ca9e-60-fb4c" targetId="may-have-armour"/>
@@ -2747,6 +2756,13 @@ When rolling To Wound, the target number is the same as the armour value of the
         <modifier type="add" value="5c4d-3c7a-3d15-1793" field="category">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="d177986a-5c1fad14" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="e3db-28a6-c81d-d063">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="11" field="selections" scope="self" childId="600c-7d08-5be1-fe0c" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>

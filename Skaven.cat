@@ -1677,6 +1677,9 @@ Any unit that suffers one or more unsaved wounds from this weapon must make a Pa
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Stormvermin" hidden="false" id="e615449a-cb6e4084" collective="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="9d63-5ccf-74ac-990e"/>
+      </constraints>
       <profiles>
         <profile name="Stormvermin" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="18cede80-dd894fca">
           <characteristics>
@@ -1718,16 +1721,7 @@ Any unit that suffers one or more unsaved wounds from this weapon must make a Pa
           </entryLinks>
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="b18c7f5-75f388eb"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="f2e7-8c87-0768-1a16"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="f2e7-8c87-0768-1a16">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="bf1d-2de8-b6d1-6aec" targetId="f3f7-ca43-674e-115f" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="f02-6d5e-5beb-12e3" targetId="may-have-armour"/>
@@ -1855,9 +1849,19 @@ Any unit that suffers one or more unsaved wounds from this weapon must make a Pa
           </conditions>
           <comment>Renegades</comment>
         </modifier>
+        <modifier type="set" value="0" field="9d63-5ccf-74ac-990e">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Clanrats" hidden="false" id="a5aa96a6-178617b0" collective="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="7cb5-d24c-9e73-776a"/>
+      </constraints>
       <profiles>
         <profile name="Clanrats" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="f1d22cd4-5c97f9de">
           <characteristics>
@@ -1902,7 +1906,6 @@ Any unit that suffers one or more unsaved wounds from this weapon must make a Pa
           <constraints>
             <constraint type="min" value="20" field="selections" scope="parent" shared="true" id="8a0b1424-a92296e"/>
             <constraint type="max" value="40" field="selections" scope="parent" shared="true" id="981eb1e6-fcff58f0"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="5d47-c178-d5d0-9eed"/>
           </constraints>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="8dc3-b34c-f8b-67da" targetId="f3f7-ca43-674e-115f" primary="false"/>
@@ -1916,12 +1919,6 @@ Any unit that suffers one or more unsaved wounds from this weapon must make a Pa
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="974c-3bf3-af4b-701d" shared="true" includeChildSelections="true">
                   <comment>Renegades</comment>
                 </condition>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="20" field="5d47-c178-d5d0-9eed">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2031,6 +2028,13 @@ Any unit that suffers one or more unsaved wounds from this weapon must make a Pa
             </condition>
           </conditions>
           <comment>Renegades</comment>
+        </modifier>
+        <modifier type="set" value="0" field="7cb5-d24c-9e73-776a">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -2157,6 +2161,18 @@ Any unit that suffers one or more unsaved wounds from this weapon must make a Pa
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Warplock Jezzails" hidden="false" id="c3a2f71f-1c02cdad" collective="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="127f-5432-0ee2-de05"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="127f-5432-0ee2-de05">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Warplock Jezzails" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="72a1b195-d356238b">
           <characteristics>
@@ -2193,16 +2209,7 @@ Any unit that suffers one or more unsaved wounds from this weapon must make a Pa
           </entryLinks>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="898dc61c-e9d39626"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="616e-9ce4-8370-dc20"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="616e-9ce4-8370-dc20">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="13bd-6b0d-c72f-9bcf" targetId="f3f7-ca43-674e-115f" primary="false"/>
           </categoryLinks>
@@ -2280,6 +2287,18 @@ Any unit that suffers one or more unsaved wounds from this weapon must make a Pa
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Rat Swarms" hidden="false" id="be93b446-106a11d0" collective="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="1f3f-8222-d0f1-7aa3"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="1f3f-8222-d0f1-7aa3">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="db92-54fd-e023-d69f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Rat Swarms" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="44ccbf4-201c84fe">
           <characteristics>
@@ -2306,16 +2325,7 @@ Any unit that suffers one or more unsaved wounds from this weapon must make a Pa
           </entryLinks>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="4ebc518f-341021d"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="ab2e-687d-b278-b77a"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="6" field="ab2e-687d-b278-b77a">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <categoryLinks>
             <categoryLink name="Swarms" hidden="false" id="b418-f12f-570b-23b7" targetId="db92-54fd-e023-d69f" primary="false"/>
           </categoryLinks>
@@ -2337,6 +2347,18 @@ Any unit that suffers one or more unsaved wounds from this weapon must make a Pa
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Packmasters &amp; Master Moulders" hidden="false" id="60e0080b-27e77fd9" collective="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="b434-4edb-0a77-69f6"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="b434-4edb-0a77-69f6">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Packmasters &amp; Master Moulders" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="d044d6b9-fc430e0f">
           <characteristics>
@@ -2369,6 +2391,25 @@ Any unit that suffers one or more unsaved wounds from this weapon must make a Pa
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Rat Ogres" hidden="false" id="cd2d3dc1-4f123b17" collective="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="e5b9-071f-9e73-3798"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="e5b9-071f-9e73-3798">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="5c55-f9d6-b181-92f8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="e5b9-071f-9e73-3798">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Rat Ogres" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="88584be7-444de5b5">
           <characteristics>
@@ -2402,16 +2443,7 @@ Any unit that suffers one or more unsaved wounds from this weapon must make a Pa
           </entryLinks>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="71deec8e-ede52898"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="5428-fd98-2d25-3f8a"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="6" field="5428-fd98-2d25-3f8a">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <categoryLinks>
             <categoryLink name="Monstrous Infantry" hidden="false" id="78f4-d8ea-c869-57a4" targetId="5c55-f9d6-b181-92f8" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="b9c1-a919-f336-a6f1" targetId="may-have-armour"/>
@@ -2476,6 +2508,25 @@ Any unit that suffers one or more unsaved wounds from this weapon must make a Pa
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Giant Rats" hidden="false" id="3fe741ef-a68370fd" collective="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="8427-8e4f-0269-8d67"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="8427-8e4f-0269-8d67">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="19f9-8dd8-bba4-625b" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="8427-8e4f-0269-8d67">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Giant Rats" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="519fe6a5-a55df99b">
           <characteristics>
@@ -2504,16 +2555,7 @@ Any unit that suffers one or more unsaved wounds from this weapon must make a Pa
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="74728b0a-8dded434"/>
             <constraint type="max" value="30" field="selections" scope="parent" shared="true" id="7bad-55ff-f0d6-1bcd"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="b084-c0c1-2bdc-ed39"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="b084-c0c1-2bdc-ed39">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <categoryLinks>
             <categoryLink name="War Beast" hidden="false" id="d06c-3631-4f1-c04e" targetId="19f9-8dd8-bba4-625b" primary="false"/>
           </categoryLinks>
@@ -2570,6 +2612,18 @@ Any unit that suffers one or more unsaved wounds from this weapon must make a Pa
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Night Runners" hidden="false" id="caca34eb-55cd4939" collective="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="cd45-243b-9d5b-a965"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="cd45-243b-9d5b-a965">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Night Runners" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="9467aa19-38430e6f">
           <characteristics>
@@ -2602,16 +2656,7 @@ Any unit that suffers one or more unsaved wounds from this weapon must make a Pa
           </entryLinks>
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="1b0b3502-494aecc"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="38cd-00ac-8556-7dce"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="38cd-00ac-8556-7dce">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="a8f8-e844-22c5-732c" targetId="f3f7-ca43-674e-115f" primary="false"/>
           </categoryLinks>
@@ -2678,6 +2723,18 @@ Any unit that suffers one or more unsaved wounds from this weapon must make a Pa
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Gutter Runners" hidden="false" id="d8c8b802-ea4e19cc" collective="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="9ccb-0eb7-77d7-2cc0"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="9ccb-0eb7-77d7-2cc0">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Gutter Runners" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="705ba28-fe9167d2">
           <characteristics>
@@ -2705,16 +2762,7 @@ Any unit that suffers one or more unsaved wounds from this weapon must make a Pa
           </entryLinks>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="95d0072c-2abdde76"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="468f-4dd4-16f7-07be"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="468f-4dd4-16f7-07be">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="e52f-952f-b0ee-ad66" targetId="f3f7-ca43-674e-115f" primary="false"/>
           </categoryLinks>
@@ -2818,6 +2866,18 @@ Any unit that suffers one or more unsaved wounds from this weapon must make a Pa
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Plague Monks" hidden="false" id="dfd168cc-4cf4df16" collective="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="13f2-3acf-f36b-bd2c"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="13f2-3acf-f36b-bd2c">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Plague Monks" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="b0c45c6a-b2e65114">
           <characteristics>
@@ -2849,16 +2909,7 @@ Any unit that suffers one or more unsaved wounds from this weapon must make a Pa
           </entryLinks>
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="253a392c-b9468076"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="6da2-5778-78eb-6b3d"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="6da2-5778-78eb-6b3d">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="b0d5-1b29-156d-96ff" targetId="f3f7-ca43-674e-115f" primary="false"/>
           </categoryLinks>
@@ -3619,17 +3670,6 @@ Any unit that suffers one or more unsaved wounds from this weapon must make a Pa
       <costs>
         <cost name="pts" typeId="points" value="5"/>
       </costs>
-      <constraints>
-        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="b350-7925-fda5-b321"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="20" field="b350-7925-fda5-b321">
-          <comment>Battle March: maximum unit strength 20</comment>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <entryLinks>
         <entryLink name="Hand Weapon" id="1c49cc5e-cc77fd28" hidden="false" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1" import="true">
           <constraints>

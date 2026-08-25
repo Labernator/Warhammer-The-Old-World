@@ -6211,6 +6211,18 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
       <costs>
         <cost typeId="points" name="pts" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="eb88-4a12-0a54-9315"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="eb88-4a12-0a54-9315">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <selectionEntries>
         <selectionEntry id="ff65-5ffb-12a2-2f50" name="Ranger" type="model" collective="false" hidden="false" publicationId="3a81ff07--pubd1e638" flatten="true" sortIndex="1">
           <costs>
@@ -6429,6 +6441,18 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dwarf Warriors" hidden="false" id="b969-2677-1d5a-8449">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="a107-e57d-676d-d0a3"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="a107-e57d-676d-d0a3">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Dwarf Warriors" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="841b-440-95e0-d75f">
           <characteristics>
@@ -6441,16 +6465,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <selectionEntry type="model" import="true" name="Dwarf Warrior" hidden="false" id="7bea-2dc7-aa4e-5de2" flatten="true" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="ca3c-e9c2-44f3-7918"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="923d-3a19-3a5f-c050"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="923d-3a19-3a5f-c050">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="f3d7-7c2e-6b1f-9593" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -6700,6 +6715,18 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Quarrellers" hidden="false" id="c4a9-d38a-2612-4a9a">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="d171-c392-c433-cd99"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="d171-c392-c433-cd99">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Quarreller" hidden="false" id="eb1d-9ea-e98-a454" flatten="true" sortIndex="1">
           <costs>
@@ -6744,16 +6771,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
           </infoLinks>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="d138-8601-31c1-ad92"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="99e3-3921-fac0-3ca3"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="99e3-3921-fac0-3ca3">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <categoryLinks>
             <categoryLink name="Heavy Infantry" hidden="false" id="6fd8-7307-60fc-52bf" targetId="ca7e-d004-ccde-caf3" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="de1d-2f5c-886e-1503" targetId="may-have-armour"/>
@@ -6895,6 +6913,18 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ironbreakers" hidden="false" id="ed17-90ba-6e91-d0d6">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="290a-9c02-e421-5d6b"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="290a-9c02-e421-5d6b">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Ironbreakers" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="ebf1-44bf-b17b-7537">
           <characteristics>
@@ -6907,16 +6937,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <selectionEntry type="model" import="true" name="Ironbreaker" hidden="false" id="a688-70ae-497f-c486" flatten="true" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="2c13-3225-3e77-8f2"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="29e6-fc2e-a511-363a"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="29e6-fc2e-a511-363a">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="c7c-8054-5fb2-4b23" targetId="721d-36e3-388a-c0d6" sortIndex="2">
               <constraints>
@@ -7192,6 +7213,18 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
       <costs>
         <cost typeId="points" name="pts" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="5599-b3bf-46e8-3ebc"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="5599-b3bf-46e8-3ebc">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <selectionEntries>
         <selectionEntry id="e60a-105b-669a-f046" name="Longbeard" type="model" collective="false" hidden="false" publicationId="3a81ff07--pubd1e638" sortIndex="1">
           <costs>
@@ -7199,16 +7232,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
           </costs>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="638b-97fd-47c8-8441"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="06c4-6f86-d1fb-051a"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="06c4-6f86-d1fb-051a">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <infoLinks>
             <infoLink name="Base (25x25)" hidden="false" type="profile" id="a17-7a47-7842-9478" targetId="193c-4d0d-de6b-bbb1"/>
             <infoLink name="Longbeard" hidden="false" type="profile" id="68fe-5844-10e8-f009" targetId="fbc8-de41-190b-8903"/>
@@ -7473,6 +7497,18 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Thunderers" hidden="false" id="dd27-431-f28d-8698">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="426b-2a7e-602a-98f9"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="426b-2a7e-602a-98f9">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Thunderer" hidden="false" id="f776-e8d1-449f-6b99" flatten="true" sortIndex="1">
           <costs>
@@ -7517,16 +7553,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
           </infoLinks>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="3111-1446-fc0-652d"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="1988-ad5f-d9c5-2add"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="1988-ad5f-d9c5-2add">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <categoryLinks>
             <categoryLink name="Heavy Infantry" hidden="false" id="7e4-a858-7a22-c9e2" targetId="ca7e-d004-ccde-caf3" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="820e-60a3-4725-2820" targetId="may-have-armour"/>
@@ -7717,6 +7744,18 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Hammerers" hidden="false" id="cc19-cbda-7503-8be5">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="2a10-1ee8-4b08-3d89"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="2a10-1ee8-4b08-3d89">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Hammerers" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="6fb1-1771-1d7d-c69d">
           <characteristics>
@@ -7729,16 +7768,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <selectionEntry type="model" import="true" name="Hammerer" hidden="false" id="5c52-5583-1847-9ede" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="b845-95e4-a059-2c79"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="07d5-2811-1aff-9e13"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="07d5-2811-1aff-9e13">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="eee5-c14f-673d-5963" targetId="721d-36e3-388a-c0d6" collective="true" sortIndex="2">
               <constraints>
@@ -7977,6 +8007,18 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Irondrakes" hidden="false" id="65a7-9001-2425-683f">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="db42-c712-fd5c-e7e5"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="db42-c712-fd5c-e7e5">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Irondrakes" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="aa33-8031-7eb9-1090">
           <characteristics>
@@ -7989,16 +8031,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
         <selectionEntry type="model" import="true" name="Irondrake" hidden="false" id="2a9a-fc7d-6622-a70b" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="1253-80e5-cf40-9a1c"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="a9f0-84fd-d119-781b"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="a9f0-84fd-d119-781b">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="e91d-a910-90b5-6356" targetId="721d-36e3-388a-c0d6" sortIndex="3">
               <constraints>
@@ -8281,6 +8314,18 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Miners" hidden="false" id="9eec-40b7-179-c6bf">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="78a6-11a7-caef-39d8"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="78a6-11a7-caef-39d8">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Miner" hidden="false" id="b59d-d501-45b5-1d6a" sortIndex="1">
           <costs>
@@ -8320,16 +8365,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
           </infoLinks>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="b58-7c7-7424-d418"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="4e7c-6a3d-1bb4-5faa"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="4e7c-6a3d-1bb4-5faa">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <categoryLinks>
             <categoryLink name="Heavy Infantry" hidden="false" id="da31-24f5-829b-df40" targetId="ca7e-d004-ccde-caf3" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="5127-2189-9fef-abac" targetId="may-have-armour"/>
@@ -8603,6 +8639,18 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Slayers" hidden="false" id="9f80-e41f-57be-c779">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="71ff-1120-8dbd-49ca"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="71ff-1120-8dbd-49ca">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Slayers" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="6190-c4f9-cf7d-2ef9">
           <characteristics>
@@ -8622,17 +8670,6 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
               <costs>
                 <cost name="pts" typeId="points" value="12"/>
               </costs>
-              <constraints>
-                <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="a04d-508c-c519-efe4"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="20" field="a04d-508c-c519-efe4">
-                  <comment>Battle March: maximum unit strength 20</comment>
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <categoryLinks>
                 <categoryLink targetId="f3f7-ca43-674e-115f" id="f3bb-abd6-6462-514d" primary="false" name="Regular Infantry"/>
               </categoryLinks>
@@ -8718,17 +8755,6 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
               <costs>
                 <cost name="pts" typeId="points" value="19"/>
               </costs>
-              <constraints>
-                <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="1770-7ae7-c90a-55e3"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="20" field="1770-7ae7-c90a-55e3">
-                  <comment>Battle March: maximum unit strength 20</comment>
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <categoryLinks>
                 <categoryLink targetId="f3f7-ca43-674e-115f" id="daf0-2780-0358-ef96" primary="false" name="Regular Infantry"/>
               </categoryLinks>
@@ -11646,6 +11672,18 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
       </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Royal Clan Warriors" hidden="false" id="e6a8-b8bd-0e50-eba0">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="539e-5268-93c9-9eb0"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="539e-5268-93c9-9eb0">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoGroups>
         <infoGroup name="Special Rules" id="bec3-7d67-1d67-da40" hidden="false">
           <infoLinks>
@@ -11718,16 +11756,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
           </entryLinks>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="80d7-a1c7-c6af-3b2f"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="4b70-3e2f-3467-c381"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="4b70-3e2f-3467-c381">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <infoLinks>
             <infoLink name="Base (25x25)" id="10d6-4e29-9787-258a" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
             <infoLink name="Royal Clan Warrior" id="1537-eee1-a7f3-080c" hidden="false" type="profile" targetId="b81b-f6fc-fa0e-7fde"/>
@@ -12046,6 +12075,18 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
       </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Brotherhood of Grimnir" hidden="false" id="a131-b0cf-8a0d-0837" collective="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="c81d-3323-3f8d-f431"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="c81d-3323-3f8d-f431">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Brotherhood of Grimnir" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="e634-0b3a-501f-1c70">
           <characteristics>
@@ -12193,16 +12234,7 @@ When a unit of Miners would arrive onto the battlefield as Reserves, it can be p
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="9dc2-f5a6-3c88-5eb0"/>
             <constraint type="max" value="30" field="selections" scope="parent" shared="true" id="3bd8-3b2c-b4da-d534"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="98b8-6553-94a7-33ac"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="98b8-6553-94a7-33ac">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="7847-b675-a968-a62b" targetId="f3f7-ca43-674e-115f" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="7401-49a5-3a9b-e605" targetId="may-have-armour"/>

@@ -874,6 +874,18 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Wildwood Rangers" hidden="false" id="d37c-a95d-615e-71d9">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="febf-a18b-f1c4-7a84"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="febf-a18b-f1c4-7a84">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Wildwood Rangers" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="20df-6ef2-cb23-57b4">
           <characteristics>
@@ -886,16 +898,7 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
         <selectionEntry type="model" import="true" name="Wildwood Ranger" hidden="false" id="85d1-ab1-ac8-1e05" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="67f2-dfaa-2656-387"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="86aa-e120-e5bc-29c2"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="86aa-e120-e5bc-29c2">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="dc0d-d7d1-d2b9-e96a" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -1046,6 +1049,18 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
       </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Deepwood Scouts" hidden="false" id="9264-289b-db3a-5b8d">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="7c72-3012-e787-57e6"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="7c72-3012-e787-57e6">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Deepwood Scout" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="a2cb-fc36-7a20-75c4">
           <characteristics>
@@ -1058,16 +1073,7 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
         <selectionEntry type="model" import="true" name="Deepwood Scout" hidden="false" id="a4aa-1ca2-fa10-5bdd" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="d6a1-6d5c-ef35-1d53"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="da40-8a12-d690-83d0"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="da40-8a12-d690-83d0">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="b1eb-7fbd-99a5-b9ee" targetId="721d-36e3-388a-c0d6" sortIndex="2">
               <constraints>
@@ -1193,6 +1199,18 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
       </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Eternal Guard" hidden="false" id="d3d1-dd14-80c2-840e">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="9de3-49a4-4986-766a"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="9de3-49a4-4986-766a">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Eternal Guard" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="e13e-373a-d07e-fd81">
           <characteristics>
@@ -1205,16 +1223,7 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
         <selectionEntry type="model" import="true" name="Eternal Guard" hidden="false" id="15ae-ee0a-61f9-3342" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="4792-f565-8b0d-79d4"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="4c6b-571b-3c66-ad14"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="4c6b-571b-3c66-ad14">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="d0ed-786c-586e-d0e8" targetId="721d-36e3-388a-c0d6" sortIndex="2">
               <constraints>
@@ -1435,6 +1444,18 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Glade Guard" hidden="false" id="886b-7a97-d451-3f0c">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="bb13-ae46-e619-36ab"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="bb13-ae46-e619-36ab">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Glade Guard" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="ea9f-ec1b-c2f2-602d">
           <characteristics>
@@ -1447,16 +1468,7 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
         <selectionEntry type="model" import="true" name="Glade Guard" hidden="false" id="f54b-aa4a-8ade-a21b" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="fb22-fd58-4d6f-4271"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="9e6d-bc26-8d9a-73dc"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="9e6d-bc26-8d9a-73dc">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="8080-95ad-ef9-6e82" targetId="721d-36e3-388a-c0d6" sortIndex="2">
               <constraints>
@@ -1517,16 +1529,7 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
             <selectionEntry type="model" import="true" name="Standard Bearer" hidden="false" id="9ae-6b61-d24-2d8c" subType="crew" flatten="true" sortIndex="2">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="886b-7a97-d451-3f0c" shared="true" id="c867-7e24-6b4e-a0c8" includeChildSelections="true"/>
-                <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="66fb-8742-a29b-9d54"/>
               </constraints>
-              <modifiers>
-                <modifier type="set" value="20" field="66fb-8742-a29b-9d54">
-                  <comment>Battle March: maximum unit strength 20</comment>
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <costs>
                 <cost name="pts" typeId="points" value="6"/>
               </costs>
@@ -1707,6 +1710,18 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
       </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Wardancers" hidden="false" id="4a01-6b67-783-6d3a">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="fdcb-e625-bf31-f69d"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="fdcb-e625-bf31-f69d">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Wardancers" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="524e-c976-560d-6c26">
           <characteristics>
@@ -1719,16 +1734,7 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
         <selectionEntry type="model" import="true" name="Wardancer" hidden="false" id="6160-3842-e000-ae97" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="110d-1c53-ff34-ebf3"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="9ec7-7584-dacb-2c23"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="9ec7-7584-dacb-2c23">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <infoLinks>
             <infoLink name="Wardancers" hidden="false" type="profile" id="ff98-fc22-be15-2de1" targetId="6518-8fc0-d3e3-5158"/>
             <infoLink name="Base (25x25)" hidden="false" type="profile" id="14f-3ddc-e31e-2670" targetId="193c-4d0d-de6b-bbb1"/>
@@ -1876,6 +1882,18 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Waywatchers" hidden="false" id="a167-14b-f89a-2f11">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="7844-c723-6049-1361"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="7844-c723-6049-1361">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Waywatchers" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="b523-303b-29d9-b051">
           <characteristics>
@@ -1888,16 +1906,7 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
         <selectionEntry type="model" import="true" name="Waywatcher" hidden="false" id="304e-f64-8d2-6d42" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="db78-e949-c0dc-1784"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="0f62-a4c7-47be-f323"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="0f62-a4c7-47be-f323">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="df28-f161-15eb-abb3" targetId="721d-36e3-388a-c0d6" sortIndex="2">
               <constraints>
@@ -2048,6 +2057,18 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dryads" hidden="false" id="1ae5-ebd2-c2f0-74da">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="0063-4080-b67c-cab1"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="0063-4080-b67c-cab1">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Dryads" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="63dc-e027-2308-f039">
           <characteristics>
@@ -2060,16 +2081,7 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
         <selectionEntry type="model" import="true" name="Dryad" hidden="false" id="ab57-8a88-28fc-49fa" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="27eb-18ef-5a31-c686"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="7e4b-bb28-3995-9ed3"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="7e4b-bb28-3995-9ed3">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="30e5-b96c-3c44-df97" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -2192,6 +2204,18 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tree Kin" hidden="false" id="ff64-94cc-3afd-5333">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="8bbd-5937-4ce5-86ae"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="8bbd-5937-4ce5-86ae">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="5c55-f9d6-b181-92f8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Tree Kin" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="3c28-45e8-ae5a-1d41">
           <characteristics>
@@ -2204,16 +2228,7 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
         <selectionEntry type="model" import="true" name="Tree Kin" hidden="false" id="b547-f6ef-34cb-5229" sortIndex="1">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e356-a8de-b535-c670"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="309c-8479-d16e-7aa8"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="6" field="309c-8479-d16e-7aa8">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="a97f-934a-d0d5-66a0" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -4013,6 +4028,9 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Glade Riders" hidden="false" id="b811-3815-bff1-1680">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="5d8e-8336-8e7d-b3a0"/>
+      </constraints>
       <profiles>
         <profile name="Glade Riders" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="3512-3d63-ebce-3810">
           <characteristics>
@@ -4025,7 +4043,6 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
         <selectionEntry type="model" import="true" name="Glade Rider" hidden="false" id="cb9a-54c-551d-1993" sortIndex="2">
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="da83-2008-37d8-592a"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="ed53-2a35-ede6-89b3"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Asrai Longbow" hidden="false" type="selectionEntry" id="2719-4ec4-8ab-418f" targetId="d0cf-9fa2-aac7-32c7" collective="true" sortIndex="3">
@@ -4114,12 +4131,6 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
-            </modifier>
-            <modifier type="set" value="10" field="ed53-2a35-ede6-89b3">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -4310,20 +4321,16 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
             <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="5c0e-2f3e-6cc8-bddda" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry type="model" import="true" name="Elven Steed" hidden="false" id="8000-e257-f686-6aa7" collective="true" subType="mount">
-      <constraints>
-        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="09b5-2863-191d-4baf"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="10" field="09b5-2863-191d-4baf">
+        <modifier type="set" value="0" field="5d8e-8336-8e7d-b3a0">
           <comment>Battle March: maximum unit strength 20</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="11" field="selections" scope="self" childId="600c-7d08-5be1-fe0c" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Elven Steed" hidden="false" id="8000-e257-f686-6aa7" collective="true" subType="mount">
       <infoLinks>
         <infoLink name="Elven Steed" hidden="false" type="profile" id="263c-92bc-3556-f2df" targetId="a4f6-d7f-7645-c216"/>
         <infoLink name="Base (30x60)" hidden="false" type="profile" id="45e0-73bb-f338-66cd" targetId="3a8b-1dd5-77fb-fdc3"/>
@@ -4489,6 +4496,18 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Sisters Of The Thorn" hidden="false" id="7424-2365-3deb-fb13">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="891d-d0ae-26e6-a665"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="891d-d0ae-26e6-a665">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="11" field="selections" scope="self" childId="600c-7d08-5be1-fe0c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Sisters Of The Thorn" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="a2d0-bf1c-5d70-a11">
           <characteristics>
@@ -4501,7 +4520,6 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
         <selectionEntry type="model" import="true" name="Sister Of The Thorn" hidden="false" id="5778-e417-4f99-ddc6" sortIndex="1">
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="3fcc-7c05-c37-12aa"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="8c2b-cd25-1e9a-a2cf"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Blackbriar Javelines" hidden="false" type="selectionEntry" id="eebe-3290-8f6c-e6ad" targetId="a8b2-ed8b-927c-c32a" collective="true" sortIndex="1"/>
@@ -4538,12 +4556,6 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
-            </modifier>
-            <modifier type="set" value="10" field="8c2b-cd25-1e9a-a2cf">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -4701,6 +4713,18 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
       </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Wild Riders" hidden="false" id="3f3d-ccd8-ad95-1750">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="3360-b432-5476-14ee"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="3360-b432-5476-14ee">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="11" field="selections" scope="self" childId="600c-7d08-5be1-fe0c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Wild Riders" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="34b9-42a6-1789-15d0">
           <characteristics>
@@ -4713,7 +4737,6 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
         <selectionEntry type="model" import="true" name="Wild Rider" hidden="false" id="d121-e7de-ee63-4b78" sortIndex="1">
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="e991-f5b1-8802-26ef"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="7dc2-02cd-ace7-8bae"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Hunting Spear" hidden="false" type="selectionEntry" id="f6-ebf9-ed0a-ea9b" targetId="e212-3f-4e6f-c35c" collective="true" sortIndex="2"/>
@@ -4768,12 +4791,6 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
-            </modifier>
-            <modifier type="set" value="10" field="7dc2-02cd-ace7-8bae">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -5468,6 +5485,18 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Guardians of Talsyn" hidden="false" id="873e-530a-12f0-b908">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="9735-c4b9-04f6-69ec"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="9735-c4b9-04f6-69ec">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Guardians of Talsyn" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="5238-2b67-0ae6-00a3">
           <characteristics>
@@ -5480,16 +5509,7 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
         <selectionEntry type="model" import="true" name="Guardians of Talsyn" hidden="false" id="4aba-f3e0-b656-43a1" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="67a0-9c3e-0108-b406"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="2644-0962-3ee7-9059"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="2644-0962-3ee7-9059">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="9a08-1b71-9842-d744" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -5625,6 +5645,25 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Wood Elf Beast Packs" hidden="false" id="806b-f97c-3a1c-28e2">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="165b-ed20-8d39-db30"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="165b-ed20-8d39-db30">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="165b-ed20-8d39-db30">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="19f9-8dd8-bba4-625b" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Wood Elf Beast Packs" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="de68-1576-b1d5-8c4b">
           <characteristics>
@@ -5637,16 +5676,7 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
         <selectionEntry type="model" import="true" name="Beast Keeper" hidden="false" id="6dc7-fb97-7644-6f23" sortIndex="2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="78f8-f52c-7f92-56f4"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="5a29-c109-cd16-db8f"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="5a29-c109-cd16-db8f">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="7bd6-0149-c854-3eb4" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -5685,7 +5715,6 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
             <selectionEntry type="model" import="true" name="Deepwood Hound" hidden="false" id="86bf-7cd1-0dad-a744" sortIndex="1">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1189-a5e0-cada-770f"/>
-                <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="9f4b-bbd9-f92e-6505"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Hand Weapon" hidden="false" id="8bad-cf69-e1d6-fa5c" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
@@ -5733,18 +5762,11 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
                     <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="31d6-b66f-6794-327c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="20" field="9f4b-bbd9-f92e-6505">
-                  <comment>Battle March: maximum unit strength 20</comment>
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-                  </conditions>
-                </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Forest Cat" hidden="false" id="35e6-14ce-7dbb-26d7" sortIndex="2">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c76b-8252-dfe8-307a"/>
-                <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="334d-a888-d000-e72e"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Hand Weapon" hidden="false" id="588a-f6f3-9860-5572" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
@@ -5796,18 +5818,11 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
                     <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="31d6-b66f-6794-327c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="20" field="334d-a888-d000-e72e">
-                  <comment>Battle March: maximum unit strength 20</comment>
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-                  </conditions>
-                </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Sylvan Boar" hidden="false" id="06e3-8a4d-9884-5345" sortIndex="3">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="faa9-5e76-2f19-2495"/>
-                <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="b989-ef55-ccbc-36e0"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Hand Weapon" hidden="false" id="28eb-a08a-1e9c-f69a" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
@@ -5856,18 +5871,11 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
                     <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="31d6-b66f-6794-327c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="20" field="b989-ef55-ccbc-36e0">
-                  <comment>Battle March: maximum unit strength 20</comment>
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-                  </conditions>
-                </modifier>
               </modifiers>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Bear of Loren" hidden="false" id="31d6-b66f-6794-327c" sortIndex="4">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1bfb-e909-a544-1574"/>
-                <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="ddfc-b8d9-6b45-cfc2"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Hand Weapon" hidden="false" id="f745-8291-fd1f-34ec" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
@@ -5918,12 +5926,6 @@ If this test is failed, only rolls of natural 6 will hit.</characteristic>
                     <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="86bf-7cd1-0dad-a744" shared="true" includeChildSelections="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="35e6-14ce-7dbb-26d7" shared="true" includeChildSelections="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="root-entry" childId="06e3-8a4d-9884-5345" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="20" field="ddfc-b8d9-6b45-cfc2">
-                  <comment>Battle March: maximum unit strength 20</comment>
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>

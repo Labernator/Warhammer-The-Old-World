@@ -1154,17 +1154,6 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Skeletal Steed" hidden="false" id="cb60-7835-709e-f0b9" collective="true" subType="mount">
-      <constraints>
-        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="6c07-154f-6e13-a053"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="10" field="6c07-154f-6e13-a053">
-          <comment>Battle March: maximum unit strength 20</comment>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <infoLinks>
         <infoLink name="Skeletal Steed" hidden="false" type="profile" id="ba58-f889-a47e-4a50" targetId="ded6-32d1-1b45-653b"/>
         <infoLink name="Base (25x50)" hidden="false" type="profile" id="b90a-441-69e2-156a" targetId="2d9f-e535-9b2e-ca11"/>
@@ -1199,17 +1188,6 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Skeleton Chariot" hidden="false" id="4a24-ffc8-223a-d8d4" collective="true" subType="mount">
-      <constraints>
-        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="9514-9d47-804b-f292"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="6" field="9514-9d47-804b-f292">
-          <comment>Battle March: maximum unit strength 20</comment>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <infoLinks>
         <infoLink name="Skeleton Chariot" hidden="false" type="profile" id="dfe1-74b6-2872-dc22" targetId="22be-951e-6b32-6af6">
           <modifiers>
@@ -1355,17 +1333,6 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Necroserpent" hidden="false" id="281d-cc5c-de3f-4011" collective="true" subType="mount">
-      <constraints>
-        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="7b3c-b6fe-b622-6baf"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="10" field="7b3c-b6fe-b622-6baf">
-          <comment>Battle March: maximum unit strength 20</comment>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <infoLinks>
         <infoLink name="Necroserpent" hidden="false" type="profile" id="4e04-c204-136f-d555" targetId="3327-2177-b006-7542"/>
         <infoLink name="Base (50x100)" hidden="false" type="profile" id="d649-384-bfe3-c5be" targetId="d456-e30e-f85d-14d"/>
@@ -2474,6 +2441,18 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tomb Guard" hidden="false" id="57fe-aa08-f68-150f">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="7637-15ac-39a1-e8cf"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="7637-15ac-39a1-e8cf">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Tomb Guard" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="d036-b5f8-d94b-b8cc">
           <characteristics>
@@ -2486,16 +2465,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <selectionEntry type="model" import="true" name="Tomb Guard" hidden="false" id="81f7-7970-137b-ff95" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="39e8-615d-5d92-3df8"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="95e6-809b-8bea-eecd"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="95e6-809b-8bea-eecd">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="597f-1556-6b2c-ea23" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -2713,6 +2683,18 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Skeleton Warriors" hidden="false" id="310d-5ffd-d45b-60bb">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="250a-14f1-9d56-41ae"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="250a-14f1-9d56-41ae">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Skeleton Warrior" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="d8d1-9fb1-6436-5a35">
           <characteristics>
@@ -2725,16 +2707,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <selectionEntry type="model" import="true" name="Skeleton Warrior" hidden="false" id="d369-6f6f-49b2-3f34" sortIndex="1">
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="d661-8a76-5ec5-3054"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="4554-5446-e23d-f500"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="4554-5446-e23d-f500">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="e34a-da8e-1d63-d445" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -2948,6 +2921,18 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Skeleton Archers" hidden="false" id="e2e4-9740-3e51-c72d">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="1846-f577-ef47-2aac"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="1846-f577-ef47-2aac">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Skeleton Archers" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="3ecc-ce2d-cc10-4b37">
           <characteristics>
@@ -2960,7 +2945,6 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <selectionEntry type="model" import="true" name="Skeleton Archer" hidden="false" id="2d1e-6ddd-1ff-e624" sortIndex="1">
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="f58f-e42a-2a33-e23a"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="5dde-c015-06d7-efdc"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="34-e400-60ce-37d7" targetId="721d-36e3-388a-c0d6" sortIndex="1">
@@ -2994,12 +2978,6 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <modifier type="set" value="5" field="f58f-e42a-2a33-e23a">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="29e3-1406-95b1-8e2e" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="20" field="5dde-c015-06d7-efdc">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3239,6 +3217,18 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ushabti" hidden="false" id="81e7-bf62-d1a1-9693">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="883e-4497-8fdd-89ac"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="883e-4497-8fdd-89ac">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="5c55-f9d6-b181-92f8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Ushabti" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="a10d-a963-526a-98ec">
           <characteristics>
@@ -3251,16 +3241,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <selectionEntry type="model" import="true" name="Ushabti" hidden="false" id="b5f-332a-4534-1525" sortIndex="1">
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="2f4f-dc0e-61d5-3ff2"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="7074-c23d-869e-21aa"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="6" field="7074-c23d-869e-21aa">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="a402-e6e5-ea5b-4f43" targetId="721d-36e3-388a-c0d6" sortIndex="1" collective="true">
               <constraints>
@@ -3372,6 +3353,18 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tomb Swarms" hidden="false" id="4d7a-245c-7e2c-27af">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="0959-62ce-6f2a-fa11"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="0959-62ce-6f2a-fa11">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="db92-54fd-e023-d69f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Tomb Swarms" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="2442-7733-fa54-5dac">
           <characteristics>
@@ -3385,16 +3378,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="250d-108c-3113-fa4b"/>
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="e06f-afb1-580b-5508"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="6fd3-06ce-cd13-4704"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="6" field="6fd3-06ce-cd13-4704">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="488c-5fca-86a3-728a" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -3447,6 +3431,18 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Carrion" hidden="false" id="38d7-eaad-2a14-e42a">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="df83-526c-f5ac-7b1c"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="df83-526c-f5ac-7b1c">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="5c55-f9d6-b181-92f8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Carrion" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="da68-4d38-597f-ed36">
           <characteristics>
@@ -3459,16 +3455,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <selectionEntry type="model" import="true" name="Carrion" hidden="false" id="e262-cd39-3ed0-ae5e">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ce15-9d0e-7d83-14d4"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="c4b2-f4f6-677d-b22f"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="6" field="c4b2-f4f6-677d-b22f">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="1c7e-d033-38b6-890e" targetId="721d-36e3-388a-c0d6">
               <constraints>
@@ -3512,6 +3499,9 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Skeleton Horse Archers" hidden="false" id="ccfd-b30b-4a66-1b31">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="de0f-da4d-0bb7-7ba2"/>
+      </constraints>
       <profiles>
         <profile name="Skeleton Horse Archers" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="52f-5679-a622-7dda">
           <characteristics>
@@ -3524,16 +3514,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <selectionEntry type="model" import="true" name="Skeleton Horse Archer" hidden="false" id="8de8-ff16-fd15-b5f4" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="2cd3-c38c-b691-d556"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="816d-5f09-a1ea-a164"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="10" field="816d-5f09-a1ea-a164">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="f9c1-194b-d634-a725" targetId="721d-36e3-388a-c0d6" sortIndex="2">
               <constraints>
@@ -3698,9 +3679,28 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <condition type="atLeast" value="1" field="selections" scope="self" childId="4d8d-7fe6-6f8a-9959" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="0" field="de0f-da4d-0bb7-7ba2">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="11" field="selections" scope="self" childId="600c-7d08-5be1-fe0c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Skeleton Horsemen" hidden="false" id="3aa7-ad25-7cea-ce6b">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="cb69-bde9-21cd-8cab"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="cb69-bde9-21cd-8cab">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="11" field="selections" scope="self" childId="5165-d052-cfc2-5887" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Skeleton Horsemen" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="5c29-4e8a-13c4-297c">
           <characteristics>
@@ -3713,7 +3713,6 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
         <selectionEntry type="model" import="true" name="Skeleton Horseman" hidden="false" id="21a3-df8e-4fdd-cf00" sortIndex="1">
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="8ab3-3695-8d17-2020"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="b8cd-55d7-c50e-6efc"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="e8fb-148c-dbe4-ac23" targetId="721d-36e3-388a-c0d6" sortIndex="2">
@@ -3766,12 +3765,6 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
-            </modifier>
-            <modifier type="set" value="10" field="b8cd-55d7-c50e-6efc">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -4230,6 +4223,18 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Skeleton Chariots" hidden="false" id="bda8-d5bc-866e-92b6">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="8384-e7a1-2420-d9ee"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="8384-e7a1-2420-d9ee">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="7dce-b0f0-2217-2820" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <selectionEntryGroups>
         <selectionEntryGroup name="Command" hidden="false" id="c6e6-4504-73d0-e7c4" sortIndex="2">
           <selectionEntries>
@@ -4381,16 +4386,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9773-4eed-864f-e00c" includeChildSelections="false"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="201d-52b2-817e-d927"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="6" field="201d-52b2-817e-d927">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <costs>
             <cost name="pts" typeId="points" value="41"/>
           </costs>
@@ -5364,6 +5360,18 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Skeleton Infantry Cohort" hidden="false" id="d53d-d4a2-33fc-6b5e" collective="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="8589-dcc7-754c-876e"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="8589-dcc7-754c-876e">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Skeleton Infatry Cohorts" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="de7-bef1-9c39-5e3d">
           <characteristics>
@@ -5457,16 +5465,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
           </selectionEntryGroups>
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="3c059802-8ca3f9cc"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="5939-366f-a72a-154b"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="5939-366f-a72a-154b">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="ab7eac67-863d4235" targetId="f3f7-ca43-674e-115f" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="f9a4-2fcc-dd7b-10c" targetId="may-have-armour"/>
@@ -5551,16 +5550,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
           </selectionEntryGroups>
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="7c6a-8f45-ecc8-f950" includeChildSelections="false"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="7c0e-8732-da66-bc68"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="20" field="7c0e-8732-da66-bc68">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="48b18052-24e9b59c" targetId="f3f7-ca43-674e-115f" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="f96a-3fc1-7e47-8b25" targetId="may-have-armour"/>
@@ -5659,6 +5649,18 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
       </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Venerable Ushabti" hidden="false" id="1027-1a96-82a2-a95f" collective="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="407a-7505-8997-c462"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="407a-7505-8997-c462">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="5c55-f9d6-b181-92f8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Venerable Ushabti" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="b346-430e-fc7c-96ff">
           <characteristics>
@@ -5698,16 +5700,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
           </entryLinks>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="b78f6145-1870e3b"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="cac0-f2cd-39a3-7e27"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="6" field="cac0-f2cd-39a3-7e27">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <categoryLinks>
             <categoryLink name="Monstrous Infantry" hidden="false" id="6431fc30-69f979fa" targetId="5c55-f9d6-b181-92f8" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="61c5-43c4-4068-c65b" targetId="may-have-armour"/>
@@ -5767,6 +5760,18 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Skeleton Cavalry Cohort" hidden="false" id="c72d4456-2206dd20" collective="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="aa07-6a7c-7576-dcdb"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="aa07-6a7c-7576-dcdb">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="11" field="selections" scope="self" childId="5165-d052-cfc2-5887" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Skeleton Cavalry Cohort" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="693a7484-26d5664e">
           <characteristics>
@@ -5879,16 +5884,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
           </selectionEntryGroups>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="d846dbd5-13fffbcb"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="4f27-7237-a451-0de6"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="10" field="4f27-7237-a451-0de6">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <categoryLinks>
             <categoryLink name="Heavy Cavalry" hidden="false" id="b09d7ed4-5678bbde" targetId="5165-d052-cfc2-5887" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="a8ac-ae83-41d5-2bed" targetId="may-have-armour"/>
@@ -5992,16 +5988,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
           </selectionEntryGroups>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="1b7c-f85c-7785-e6f3"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="63d1-50f7-4a02-9f29"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="10" field="63d1-50f7-4a02-9f29">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <categoryLinks>
             <categoryLink name="Heavy Cavalry" hidden="false" id="7726c25b-32ba15e9" targetId="5165-d052-cfc2-5887" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="1db6-a6af-77c2-b2b0" targetId="may-have-armour"/>
@@ -6199,6 +6186,18 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tomb Guard Chariots" hidden="false" id="b66d-46bf-9e6c-ea97" collective="false">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="550e-102d-4a5b-b85f"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="550e-102d-4a5b-b85f">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="7dce-b0f0-2217-2820" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Tomb Guard Chariots" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="4d29-7dfb-3b09-6d38">
           <characteristics>
@@ -6281,16 +6280,7 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
           </selectionEntries>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="ca06dd43-98ab1e71"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="8109-8633-6286-9502"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="6" field="8109-8633-6286-9502">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <categoryLinks>
             <categoryLink name="Light Chariot" hidden="false" id="75216603-72b6131" targetId="7dce-b0f0-2217-2820" primary="false"/>
             <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="8549-3e9f-c2f4-423e" targetId="may-have-shield"/>
@@ -6448,17 +6438,6 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
       <costs>
         <cost name="pts" typeId="points" value="16"/>
       </costs>
-      <constraints>
-        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="a480-a5af-624a-91fe"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="10" field="a480-a5af-624a-91fe">
-          <comment>Battle March: maximum unit strength 20</comment>
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink targetId="5165-d052-cfc2-5887" id="a7fb-1702-620d-3182" primary="false" name="Heavy Cavalry"/>
       </categoryLinks>

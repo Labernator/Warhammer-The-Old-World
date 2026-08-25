@@ -92,6 +92,18 @@
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Chaos Ogres" hidden="false" id="d7c9-d-55d4-9c7f">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="da84-b9f5-6083-c398"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="da84-b9f5-6083-c398">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="5c55-f9d6-b181-92f8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Chaos Ogres" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="cd6-b48c-32e6-f08b">
           <characteristics>
@@ -105,16 +117,7 @@
           <constraints>
             <constraint type="max" value="15" field="selections" scope="parent" shared="true" id="e57d-f3ba-f6c6-bcb5"/>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="1599-3edb-f715-f3ea"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="8f3d-4118-a159-616f"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="6" field="8f3d-4118-a159-616f">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="1220-fd90-232b-8d51" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -557,6 +560,18 @@
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Chaos Trolls" hidden="false" id="df02-abd1-c7f7-4233">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="ffc6-f947-cd60-61ac"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="ffc6-f947-cd60-61ac">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="5c55-f9d6-b181-92f8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile name="Chaos Troll" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="d52b-85f9-60e-c9f8">
           <characteristics>
@@ -570,16 +585,7 @@
           <constraints>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="69a8-4b23-bd36-5d0f"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3701-f664-3095-faca"/>
-            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="8c73-2a08-a1c7-26c6"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="6" field="8c73-2a08-a1c7-26c6">
-              <comment>Battle March: maximum unit strength 20</comment>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Troll Vomit" hidden="false" type="selectionEntry" id="1fd8-ef0c-9449-1e09" targetId="b5d4-7050-5328-3003" sortIndex="3">
               <constraints>
