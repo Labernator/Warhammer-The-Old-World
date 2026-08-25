@@ -5202,6 +5202,13 @@
             <condition type="atLeast" value="11" field="selections" scope="self" childId="5165-d052-cfc2-5887" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="11" field="selections" scope="self" childId="5165-d052-cfc2-5887" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink name="Faction: The Empire of Man" hidden="false" id="1045-d25c-6c15-b6c3" primary="false" targetId="e5f1-f9ee-d533-b2dc"/>
@@ -5687,6 +5694,13 @@
           </repeats>
         </modifier>
         <modifier type="set" value="0" field="8c9d-c122-8585-9567">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="11" field="selections" scope="self" childId="5165-d052-cfc2-5887" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
           <comment>Battle March: maximum unit strength 20</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>

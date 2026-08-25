@@ -2452,6 +2452,13 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Tomb Guard" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="d036-b5f8-d94b-b8cc">
@@ -2694,6 +2701,13 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Skeleton Warrior" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="d8d1-9fb1-6436-5a35">
@@ -2926,6 +2940,13 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
       </constraints>
       <modifiers>
         <modifier type="set" value="0" field="1846-f577-ef47-2aac">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
           <comment>Battle March: maximum unit strength 20</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
@@ -3228,6 +3249,13 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <condition type="atLeast" value="7" field="selections" scope="self" childId="5c55-f9d6-b181-92f8" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="5c55-f9d6-b181-92f8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Ushabti" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="a10d-a963-526a-98ec">
@@ -3364,6 +3392,13 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <condition type="atLeast" value="7" field="selections" scope="self" childId="db92-54fd-e023-d69f" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="db92-54fd-e023-d69f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Tomb Swarms" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="2442-7733-fa54-5dac">
@@ -3436,6 +3471,13 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
       </constraints>
       <modifiers>
         <modifier type="set" value="0" field="df83-526c-f5ac-7b1c">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="5c55-f9d6-b181-92f8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
           <comment>Battle March: maximum unit strength 20</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
@@ -3686,6 +3728,13 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <condition type="atLeast" value="11" field="selections" scope="self" childId="600c-7d08-5be1-fe0c" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="11" field="selections" scope="self" childId="600c-7d08-5be1-fe0c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Skeleton Horsemen" hidden="false" id="3aa7-ad25-7cea-ce6b">
@@ -3694,6 +3743,13 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
       </constraints>
       <modifiers>
         <modifier type="set" value="0" field="cb69-bde9-21cd-8cab">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="11" field="selections" scope="self" childId="5165-d052-cfc2-5887" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
           <comment>Battle March: maximum unit strength 20</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
@@ -4228,6 +4284,13 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
       </constraints>
       <modifiers>
         <modifier type="set" value="0" field="8384-e7a1-2420-d9ee">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="7dce-b0f0-2217-2820" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
           <comment>Battle March: maximum unit strength 20</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
@@ -5371,6 +5434,13 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Skeleton Infatry Cohorts" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="de7-bef1-9c39-5e3d">
@@ -5660,6 +5730,13 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
             <condition type="atLeast" value="7" field="selections" scope="self" childId="5c55-f9d6-b181-92f8" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="5c55-f9d6-b181-92f8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Venerable Ushabti" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="b346-430e-fc7c-96ff">
@@ -5765,6 +5842,13 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
       </constraints>
       <modifiers>
         <modifier type="set" value="0" field="aa07-6a7c-7576-dcdb">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="11" field="selections" scope="self" childId="5165-d052-cfc2-5887" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
           <comment>Battle March: maximum unit strength 20</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
@@ -6191,6 +6275,13 @@ However, if this model casts the Light of Death Bound spell, this Bound spell wi
       </constraints>
       <modifiers>
         <modifier type="set" value="0" field="550e-102d-4a5b-b85f">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="7dce-b0f0-2217-2820" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
           <comment>Battle March: maximum unit strength 20</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>

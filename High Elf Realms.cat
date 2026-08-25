@@ -1163,6 +1163,13 @@
             <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Elven Spearman" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="39e9-f3d5-30c2-8d84">
@@ -3679,6 +3686,13 @@
             <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Elven Archer" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="da8-ef41-8bf8-33f3">
@@ -4061,6 +4075,13 @@
             <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Lothern Sea Guard" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="f4e5-5d64-288f-93">
@@ -4429,6 +4450,13 @@
             <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="White Lions of Chrace" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="1dbe-779e-6137-5f5f">
@@ -4631,6 +4659,13 @@
             <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Swordmasters of Hoeth" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="1f88-1ff3-7596-772a">
@@ -4797,6 +4832,13 @@
             <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Phoenix Guard" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="e279-d240-c1-d74f">
@@ -4952,6 +4994,13 @@
       </constraints>
       <modifiers>
         <modifier type="set" value="0" field="f3f7-ae83-7aea-e7cc">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
           <comment>Battle March: maximum unit strength 20</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
@@ -5156,6 +5205,13 @@
             <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Sisters of Avelorn" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="f51-36c3-78c1-fbd1">
@@ -5302,6 +5358,13 @@
       </constraints>
       <modifiers>
         <modifier type="set" value="0" field="b1c7-af14-2641-f6e7">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="11" field="selections" scope="self" childId="600c-7d08-5be1-fe0c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
           <comment>Battle March: maximum unit strength 20</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
@@ -5682,6 +5745,13 @@
             <condition type="atLeast" value="11" field="selections" scope="self" childId="5165-d052-cfc2-5887" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="11" field="selections" scope="self" childId="5165-d052-cfc2-5887" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Silver Helms" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="3af7-3749-1b26-cd00">
@@ -5838,6 +5908,13 @@
       </constraints>
       <modifiers>
         <modifier type="set" value="0" field="8b12-59f6-e596-8242">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="11" field="selections" scope="self" childId="5165-d052-cfc2-5887" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
           <comment>Battle March: maximum unit strength 20</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
@@ -7709,6 +7786,13 @@
             <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Ship&apos;s Company" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="52a1-21ae-6a45-be6a">
@@ -8049,6 +8133,13 @@
             <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Lion Guard" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="6920-ce72-8f34-83e1">
@@ -8191,6 +8282,13 @@
       </constraints>
       <modifiers>
         <modifier type="set" value="0" field="22eb-2014-46b4-95b4">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
           <comment>Battle March: maximum unit strength 20</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>

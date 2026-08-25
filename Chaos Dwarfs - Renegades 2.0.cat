@@ -1779,6 +1779,13 @@ Note that this special rule is not cumulative. In other words, using it more tha
             <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Infernal Ironsworn" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="87f0638e-c1b2e798">
@@ -2203,6 +2210,13 @@ Note that this special rule is not cumulative. In other words, using it more tha
             <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="K’daai Fireborn" hidden="false" id="49576b8c-26b4cbd6" collective="false">
@@ -2211,6 +2225,13 @@ Note that this special rule is not cumulative. In other words, using it more tha
       </constraints>
       <modifiers>
         <modifier type="set" value="0" field="12fd-1d56-06bf-dd3a">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="5c55-f9d6-b181-92f8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
           <comment>Battle March: maximum unit strength 20</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
@@ -2338,6 +2359,13 @@ Note that this special rule is not cumulative. In other words, using it more tha
       </constraints>
       <modifiers>
         <modifier type="set" value="0" field="b6b3-4a86-a7a1-0885">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
           <comment>Battle March: maximum unit strength 20</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
@@ -2476,6 +2504,13 @@ Note that this special rule is not cumulative. In other words, using it more tha
       </constraints>
       <modifiers>
         <modifier type="set" value="0" field="188f-462d-1f7c-35b2">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
           <comment>Battle March: maximum unit strength 20</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
@@ -2779,6 +2814,13 @@ Note that this special rule is not cumulative. In other words, using it more tha
           </conditions>
         </modifier>
         <modifier type="set" value="0" field="22e0-a2e5-6ea8-7aac">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="11" field="selections" scope="self" childId="600c-7d08-5be1-fe0c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
           <comment>Battle March: maximum unit strength 20</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
@@ -3938,6 +3980,13 @@ Note that this special rule is not cumulative. In other words, using it more tha
             <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Blunderbuss Decimators" hidden="false" id="37ad-5022-3124-c3d1">
@@ -4110,6 +4159,13 @@ Note that this special rule is not cumulative. In other words, using it more tha
           </conditions>
         </modifier>
         <modifier type="set" value="0" field="0458-1f5d-c481-ce48">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
           <comment>Battle March: maximum unit strength 20</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>

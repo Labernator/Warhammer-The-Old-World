@@ -1522,6 +1522,13 @@ This character has a 5+ Ward save against any wounds suffered</characteristic>
             <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Temple Guard" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="147d1c0c-b628f856">
@@ -1843,6 +1850,13 @@ This character has a 5+ Ward save against any wounds suffered</characteristic>
             <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Skink Skirmishers" hidden="false" id="a08674da-5e53eec4" collective="false">
@@ -2028,6 +2042,13 @@ This character has a 5+ Ward save against any wounds suffered</characteristic>
             <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Chameleon Skinks" hidden="false" id="3da3f6e5-863f87db" collective="false">
@@ -2036,6 +2057,13 @@ This character has a 5+ Ward save against any wounds suffered</characteristic>
       </constraints>
       <modifiers>
         <modifier type="set" value="0" field="cff4-9659-77e7-c983">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
           <comment>Battle March: maximum unit strength 20</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
@@ -2142,6 +2170,13 @@ This character has a 5+ Ward save against any wounds suffered</characteristic>
             <condition type="atLeast" value="7" field="selections" scope="self" childId="5c55-f9d6-b181-92f8" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="5c55-f9d6-b181-92f8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Kroxigor" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="5f0134c9-5ab6cc9f">
@@ -2237,6 +2272,13 @@ This character has a 5+ Ward save against any wounds suffered</characteristic>
             <condition type="atLeast" value="7" field="selections" scope="self" childId="db92-54fd-e023-d69f" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="db92-54fd-e023-d69f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Jungle Swarms" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="7a81e5b4-e25ad0be">
@@ -2306,6 +2348,20 @@ This character has a 5+ Ward save against any wounds suffered</characteristic>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
             <condition type="atLeast" value="21" field="selections" scope="self" childId="19f9-8dd8-bba4-625b" shared="true" includeChildSelections="true"/>
           </conditions>
+        </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="21" field="selections" scope="self" childId="19f9-8dd8-bba4-625b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <profiles>
@@ -2421,6 +2477,20 @@ This character has a 5+ Ward save against any wounds suffered</characteristic>
             <condition type="atLeast" value="21" field="selections" scope="self" childId="19f9-8dd8-bba4-625b" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="21" field="selections" scope="self" childId="f3f7-ca43-674e-115f" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="21" field="selections" scope="self" childId="19f9-8dd8-bba4-625b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Razordon Packs" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="c91e20a1-5836b677">
@@ -2523,6 +2593,13 @@ This character has a 5+ Ward save against any wounds suffered</characteristic>
       </constraints>
       <modifiers>
         <modifier type="set" value="0" field="2155-22df-6cee-7661">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="11" field="selections" scope="self" childId="5165-d052-cfc2-5887" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
           <comment>Battle March: maximum unit strength 20</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>

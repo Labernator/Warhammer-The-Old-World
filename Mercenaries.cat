@@ -13,6 +13,13 @@
             <condition type="atLeast" value="7" field="selections" scope="self" childId="5c55-f9d6-b181-92f8" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="5c55-f9d6-b181-92f8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Badlands Ogre Bulls" typeId="2878-9a1f-dd74-48e3" typeName="Unit" hidden="false" id="fbd5-1dc2-61a9-7c85">
@@ -377,6 +384,13 @@
             <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink name="Faction: Dwarfen Mountain Holds" hidden="false" id="4b02-906e-4f2a-d88c" targetId="f4fd-aa79-6ff3-1ea9" primary="false"/>
@@ -689,6 +703,13 @@
             <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="21" field="selections" scope="self" childId="ca7e-d004-ccde-caf3" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="f4fd-aa79-6ff3-1ea9" id="121f-2a98-f4b2-e3d9" primary="false" name="Faction: Dwarfen Mountain Holds"/>
@@ -966,6 +987,13 @@
       </constraints>
       <modifiers>
         <modifier type="set" value="0" field="f18a-4d5f-990d-3db3">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+            <condition type="atLeast" value="7" field="selections" scope="self" childId="5c55-f9d6-b181-92f8" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="(exceeds maximum Unit Strength 20)" field="name">
           <comment>Battle March: maximum unit strength 20</comment>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
