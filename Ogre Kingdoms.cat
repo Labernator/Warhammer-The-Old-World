@@ -2022,7 +2022,16 @@ Enemy models removed from play are considered to have been removed from the figh
           </entryLinks>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="709e962f-e45e233d"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="8437-33de-7779-759a"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="6" field="8437-33de-7779-759a">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Monstrous Infantry" hidden="false" id="b989-c32f-52bd-f06e" targetId="5c55-f9d6-b181-92f8" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="5ef3-390d-d80d-a8e2" targetId="may-have-armour"/>
@@ -2249,7 +2258,16 @@ Enemy models removed from play are considered to have been removed from the figh
           </entryLinks>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="44c0ef76-ac12ee40"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="baaa-986a-9deb-f9a0"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="6" field="baaa-986a-9deb-f9a0">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Monstrous Infantry" hidden="false" id="4149-c64c-740f-fb70" targetId="5c55-f9d6-b181-92f8" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="c352-b22-7861-c7df" targetId="may-have-armour"/>
@@ -2418,7 +2436,16 @@ Enemy models removed from play are considered to have been removed from the figh
           </entryLinks>
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5f18718c-8a3da1d6"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="2db0-7028-292f-44a1"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="6" field="2db0-7028-292f-44a1">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Monstrous Infantry" hidden="false" id="ada6-ec6-26e9-96b" targetId="5c55-f9d6-b181-92f8" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="2e50-a653-9033-1b76" targetId="may-have-armour"/>
@@ -2539,7 +2566,16 @@ Enemy models removed from play are considered to have been removed from the figh
           </entryLinks>
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="f7fedc44-f6b8900e"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="5df8-7f83-f705-24a9"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="5df8-7f83-f705-24a9">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="87ed-ac42-339f-7180" targetId="f3f7-ca43-674e-115f" primary="false"/>
           </categoryLinks>
@@ -2837,7 +2873,16 @@ Enemy models removed from play are considered to have been removed from the figh
           </selectionEntryGroups>
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="63046a1e-6eface8"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="3056-0924-06d3-d6aa"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="6" field="3056-0924-06d3-d6aa">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Monstrous Infantry" hidden="false" id="dd30-3924-9a1c-de30" targetId="5c55-f9d6-b181-92f8" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="70e8-7-8253-ad47" targetId="may-have-armour"/>
@@ -2976,7 +3021,16 @@ Enemy models removed from play are considered to have been removed from the figh
           </entryLinks>
           <constraints>
             <constraint type="min" value="20" field="selections" scope="parent" shared="true" id="adc1dfe6-c01916f0"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="9120-b801-9f02-2512"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="9120-b801-9f02-2512">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="e331-c0ba-63dd-558e" targetId="f3f7-ca43-674e-115f" primary="false"/>
           </categoryLinks>
@@ -3049,7 +3103,16 @@ Enemy models removed from play are considered to have been removed from the figh
           </entryLinks>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="e1ea46fe-e473a648"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="d416-8654-9c60-813d"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="6" field="d416-8654-9c60-813d">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Monstrous Infantry" hidden="false" id="3076-eb59-10f8-ba0c" targetId="5c55-f9d6-b181-92f8" primary="false"/>
           </categoryLinks>

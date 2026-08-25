@@ -4809,6 +4809,7 @@
         <selectionEntry type="model" import="true" name="Inner Circle Knight" hidden="false" id="76ed-a398-43d3-7c73" sortIndex="1">
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="f4a7-d87a-d082-1610"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="09a4-8f21-9ada-0411"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="859e-e8f9-1f14-e695" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="3">
@@ -4931,6 +4932,12 @@
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" value="10" field="09a4-8f21-9ada-0411">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -5229,6 +5236,7 @@
         <selectionEntry type="model" import="true" name="Empire Knight" hidden="false" id="fa06-e591-e99e-9258" sortIndex="1">
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="d669-e14a-3636-3792"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="7753-400b-0110-10a2"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="dde0-85ab-1b41-9fd5" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
@@ -5339,6 +5347,12 @@
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" value="10" field="7753-400b-0110-10a2">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>

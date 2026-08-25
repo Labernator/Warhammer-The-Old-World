@@ -143,7 +143,16 @@
           </selectionEntryGroups>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="63496c58-62537bc2"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="3c15-87fd-e228-aa50"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="6" field="3c15-87fd-e228-aa50">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Monstrous Infantry" hidden="false" id="86411937-8c579005" targetId="5c55-f9d6-b181-92f8" primary="false"/>
           </categoryLinks>
@@ -396,7 +405,16 @@
           </categoryLinks>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="e250-b232-a8d1-7f94"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="f5f2-5c55-11e9-996c"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="f5f2-5c55-11e9-996c">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <infoLinks>
             <infoLink name="Base (25x25)" id="9405-dfde-953f-23a2" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
             <infoLink name="Imperial Dwarf Warrior" id="0e86-44e8-711b-927f" hidden="false" type="profile" targetId="16be-e57b-56fc-ee7a"/>
@@ -889,6 +907,17 @@
           <costs>
             <cost name="pts" typeId="points" value="14"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="9d31-cb0f-ff86-5f6b"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="9d31-cb0f-ff86-5f6b">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Heavy Infantry" hidden="false" id="b6b5-fb49-287e-0c9a" targetId="ca7e-d004-ccde-caf3" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="4c67-ecaf-969e-ae37" targetId="may-have-armour" primary="false"/>
@@ -1058,7 +1087,16 @@
           </selectionEntryGroups>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="129e-3cc6-880c-792b"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="eccf-0451-4f89-9155"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="6" field="eccf-0451-4f89-9155">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Monstrous Infantry" hidden="false" id="846a-bfcd-b130-7516" targetId="5c55-f9d6-b181-92f8" primary="false"/>
           </categoryLinks>

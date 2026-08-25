@@ -464,6 +464,17 @@ If a unit with this special rule wishes to adopt Marching Column and march at tr
       </infoGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Barded Warhorse" hidden="false" id="1de9-ef8b-c9eb-5044" collective="true" subType="mount">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="ee7b-bf9a-d554-3e30"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="10" field="ee7b-bf9a-d554-3e30">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink name="Barded Warhorse" id="137a-2a8c-a470-1cfd" hidden="false" type="profile" targetId="4b5a-ba09-6c41-9fb7"/>
         <infoLink name="Base (30x60)" id="0f07-772f-ad0b-7c8a" hidden="false" type="profile" targetId="3a8b-1dd5-77fb-fdc3"/>
@@ -503,6 +514,17 @@ If a unit with this special rule wishes to adopt Marching Column and march at tr
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Warhorse" hidden="false" id="4635-d779-e071-5f40" collective="true" subType="mount">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="2922-0a5d-ef95-93e7"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="10" field="2922-0a5d-ef95-93e7">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink name="Warhorse" id="89f8-ca97-0d84-d2fe" hidden="false" type="profile" targetId="1b93-7060-4c3d-4762"/>
         <infoLink name="Base (30x60)" id="9b8a-7f0b-c79e-cdbf" hidden="false" type="profile" targetId="3a8b-1dd5-77fb-fdc3"/>
@@ -783,6 +805,7 @@ If a unit with this special rule wishes to adopt Marching Column and march at tr
         <selectionEntry type="model" import="true" name="Sellsword" hidden="false" id="5b87-8782-cab3-706f" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="d3cc-8c48-02f9-1f63"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="6a5d-3163-7391-6e57"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="b780-d964-1508-f69f" type="selectionEntry" targetId="721d-36e3-388a-c0d6" collective="true" sortIndex="1">
@@ -865,6 +888,12 @@ If a unit with this special rule wishes to adopt Marching Column and march at tr
             <modifier type="add" value="ca7e-d004-ccde-caf3" field="category">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="7dcf-5663-1271-4a55" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="20" field="6a5d-3163-7391-6e57">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -992,6 +1021,7 @@ If a unit with this special rule wishes to adopt Marching Column and march at tr
         <selectionEntry type="model" import="true" name="Veteran Sellsword" hidden="false" id="1fbe-6b0e-501e-7e31" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="f708-e7e3-9846-b39c"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="aa34-17a1-1d24-781e"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="e091-334a-bc94-1fda" type="selectionEntry" targetId="721d-36e3-388a-c0d6" collective="true" sortIndex="1">
@@ -1079,6 +1109,12 @@ If a unit with this special rule wishes to adopt Marching Column and march at tr
             <modifier type="add" value="ca7e-d004-ccde-caf3" field="category">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="7dcf-5663-1271-4a55" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="20" field="aa34-17a1-1d24-781e">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1234,7 +1270,16 @@ If a unit with this special rule wishes to adopt Marching Column and march at tr
         <selectionEntry type="model" import="true" name="Freeblade Knight" hidden="false" id="53fc-1dd7-3f20-99dc" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="be10-410b-64f5-5184"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="d71f-1cc4-c92a-9a87"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="10" field="d71f-1cc4-c92a-9a87">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="279c-755f-44a3-fa13" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -1414,7 +1459,16 @@ If a unit with this special rule wishes to adopt Marching Column and march at tr
         <selectionEntry type="model" import="true" name="Veteran Freeblade" hidden="false" id="3d03-a4ee-7f4c-b946" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="cbda-fcac-979b-a4a5"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="9ff3-d28d-7e60-73a6"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="10" field="9ff3-d28d-7e60-73a6">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="102a-6e6b-2dbe-f972" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -1611,7 +1665,16 @@ If a unit with this special rule wishes to adopt Marching Column and march at tr
         <selectionEntry type="model" import="true" name="Hireling Outrider" hidden="false" id="adc0-ca14-7a67-8aa3" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="0acf-781d-5255-2c39"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="65b5-4d4f-1172-e13c"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="10" field="65b5-4d4f-1172-e13c">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="6794-89b3-e9f3-4b05" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -2352,7 +2415,16 @@ If a unit with this special rule wishes to adopt Marching Column and march at tr
           </selectionEntryGroups>
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="413a-f617-fe03-2674"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="052a-7d1d-7714-9d5e"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="052a-7d1d-7714-9d5e">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="eba0-4c13-48e4-9d93" targetId="f3f7-ca43-674e-115f" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="848d-0eff-19ac-8bbb" targetId="may-have-armour"/>

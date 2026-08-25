@@ -2152,7 +2152,16 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <selectionEntry type="model" import="true" name="Bestigor" hidden="false" id="1c53-a590-e36c-43b4" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="7be7-14d3-b986-f7f9"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="e928-a2bf-11e4-cbea"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="e928-a2bf-11e4-cbea">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="4666-a49d-45d8-6962" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -2329,7 +2338,16 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <selectionEntry type="model" import="true" name="Gor" hidden="false" id="f93a-7371-d6fd-adaa" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="7720-7f-aaaf-232e"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="31f0-e797-f7a0-0ec2"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="31f0-e797-f7a0-0ec2">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="9c7d-d034-ca10-cafc" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -2616,7 +2634,16 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <selectionEntry type="model" import="true" name="Ungor" hidden="false" id="1220-e728-e378-b0f4" sortIndex="1">
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="9915-90b6-7d5c-96b0"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="59ca-dd19-e999-69e0"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="59ca-dd19-e999-69e0">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="51b7-93ca-72cf-4584" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -2826,7 +2853,16 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <selectionEntry type="model" import="true" name="Harpy" hidden="false" id="bc83-3151-2205-2f43" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="fd01-9cb4-7b6a-d0ed"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="1f68-a179-ee61-e7a0"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="1f68-a179-ee61-e7a0">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="9b60-36c5-1ba6-cb7b" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -2878,7 +2914,16 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <selectionEntry type="model" import="true" name="Minotaur" hidden="false" id="1a14-ee08-ddf3-f80a" sortIndex="1" collective="false">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5750-284b-a3a6-5a08"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="ef4d-5fae-88e4-dcd6"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="6" field="ef4d-5fae-88e4-dcd6">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Light Armour" hidden="false" type="selectionEntry" id="5d25-86cb-133e-4927" targetId="7cab-40e6-f134-de78" sortIndex="3">
               <constraints>
@@ -3095,7 +3140,16 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <selectionEntry type="model" import="true" name="Centigor" hidden="false" id="7f02-555f-a18a-1823" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="e288-3d5b-784-6ff1"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="7b1c-2ac8-c664-28b6"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="10" field="7b1c-2ac8-c664-28b6">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="3a9b-5be0-d146-5847" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -3361,7 +3415,16 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <selectionEntry type="model" import="true" name="Chaos Warhound" hidden="false" id="451c-799b-fe53-1e05" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="b6f7-c53d-7169-a222"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="eeb7-6509-71dc-a378"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="eeb7-6509-71dc-a378">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="c898-87e4-d45-3677" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -3465,7 +3528,16 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <selectionEntry type="model" import="true" name="Razorgor" hidden="false" id="54a8-4840-b60-7ced" sortIndex="1">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="143-aae6-71d8-2810"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="b917-f45b-c364-cd50"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="b917-f45b-c364-cd50">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="afb7-8d27-7a1-2102" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -3531,6 +3603,17 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Bestigor Crew" hidden="false" id="524b-b5ec-f7ef-ff5f" subType="crew">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="da86-8562-fd15-6b9c"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="20" field="da86-8562-fd15-6b9c">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="ca7e-d004-ccde-caf3" id="a1e1-2302-f927-ed75" primary="false" name="Heavy Infantry" hidden="false"/>
       </categoryLinks>
@@ -3551,6 +3634,17 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Gor Crew" hidden="false" id="faaf-11ec-d21d-cb54" subType="crew">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="c41f-56cc-4312-000f"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="20" field="c41f-56cc-4312-000f">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="ca7e-d004-ccde-caf3" id="2ab2-bc83-d845-693f" primary="false" name="Heavy Infantry" hidden="false"/>
       </categoryLinks>
@@ -4516,7 +4610,16 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <selectionEntry type="model" import="true" name="Warped Gor" hidden="false" id="4c97-a572-42e1-6d00" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="c5d8-30f5-83ae-e54b"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="5706-0f35-8a17-2a4b"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="5706-0f35-8a17-2a4b">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="7ec8-3ca0-2e69-2d7c" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -4672,7 +4775,16 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <selectionEntry type="model" import="true" name="Primal Warhound" hidden="false" id="8a22-e863-729d-d8bb" sortIndex="1">
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="3dd0-4eb2-6f3b-8a85"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="280a-9937-f290-bd93"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="280a-9937-f290-bd93">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="9205-6ebf-7fbb-cb82" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -4726,6 +4838,7 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <selectionEntry type="model" import="true" name="Ungor Ravager" hidden="false" id="badd-3a76-3f25-b6ea" sortIndex="2">
           <constraints>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="be49-1698-b9e7-2e47"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="80bc-3151-831b-2135"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="ad80-d1b0-651a-6ed8" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
@@ -4760,6 +4873,12 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
               <repeats>
                 <repeat value="3" repeats="1" field="selections" scope="parent" childId="8a22-e863-729d-d8bb" shared="true" roundUp="false" includeChildSelections="false"/>
               </repeats>
+            </modifier>
+            <modifier type="set" value="20" field="80bc-3151-831b-2135">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <infoGroups>
@@ -4801,7 +4920,16 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <selectionEntry type="model" import="true" name="Gor" hidden="false" id="8e23-1bf3-695e-232c" sortIndex="2">
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="d9c3-3d9d-a0eb-015d"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="970f-3b01-45a5-99e3"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="970f-3b01-45a5-99e3">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <infoLinks>
             <infoLink name="Gor" id="3159-a96e-e057-ffc2" hidden="false" type="profile" targetId="16a9-6b4b-1dc9-ff17"/>
             <infoLink name="Base (25x25)" id="b546-7b35-32f4-8178" hidden="false" type="profile" targetId="193c-4d0d-de6b-bbb1"/>
@@ -4840,7 +4968,16 @@ Alternatively, if the Herdstone is replacing a special feature specified by a sc
         <selectionEntry type="model" import="true" name="Ungor" hidden="false" id="ab52-13ae-f964-74d5" sortIndex="3">
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="b93a-ad3b-61a4-c86c"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="6df7-eb30-e002-f9bb"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="6df7-eb30-e002-f9bb">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <selectionEntryGroups>
             <selectionEntryGroup name="Equipment" id="3b82-2327-a7bf-46d4" hidden="false" flatten="true" sortIndex="3">
               <entryLinks>

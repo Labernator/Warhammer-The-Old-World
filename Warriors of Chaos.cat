@@ -825,6 +825,17 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
       <costs>
         <cost name="pts" typeId="points" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="0c2a-aa15-3807-44c4"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="10" field="0c2a-aa15-3807-44c4">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink name="Chaos Steed" hidden="false" type="profile" id="f6cd-7f01-46da-a4cd" targetId="99d7-6f3c-861d-e7a9"/>
         <infoLink name="Base (30x60)" hidden="false" type="profile" id="27ef-f19b-cfbf-aa6f" targetId="3a8b-1dd5-77fb-fdc3"/>
@@ -2199,7 +2210,16 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <selectionEntry type="model" import="true" name="Chosen Chaos Warrior" hidden="false" id="77b7-1d13-1994-eac7" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="4a14-3819-9495-38ac"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="b44c-b312-75c4-453a"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="b44c-b312-75c4-453a">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="3cf4-4d49-b13b-8771" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -2426,7 +2446,16 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <selectionEntry type="model" import="true" name="Chaos Warrior" hidden="false" id="4de1-6a92-14d4-9c57" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="4aca-249a-6f29-58c8"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="ac59-e27a-d4ae-3c93"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="ac59-e27a-d4ae-3c93">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="bf8f-9b2b-1fe9-abf8" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -2625,7 +2654,16 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <selectionEntry type="model" import="true" name="Chaos Marauder" hidden="false" id="acb9-8450-69e0-5cdc" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="52e3-e622-664f-e56"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="09e2-5292-1be3-0492"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="09e2-5292-1be3-0492">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="74b8-d2ea-44f4-ce0d" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -2879,7 +2917,16 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <selectionEntry type="model" import="true" name="Forsaken" hidden="false" id="193e-892f-e97-b86b">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="daf5-953a-40f-b00d"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="b338-a634-dd6d-9468"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="b338-a634-dd6d-9468">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="7a98-cab1-cd2d-f40" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -2970,6 +3017,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
           </costs>
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="37d1-98c7-2507-5fac"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="356f-a872-dd95-cc17"/>
           </constraints>
           <infoLinks>
             <infoLink name="Chaos Knight" hidden="false" type="profile" id="9f1e-be1a-84ca-9de4" targetId="d9c6-84c7-b8dd-d377"/>
@@ -3054,6 +3102,12 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" value="10" field="356f-a872-dd95-cc17">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -3175,6 +3229,7 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
           </costs>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="8f2-65ce-2328-3731"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="7949-3916-997a-9cd6"/>
           </constraints>
           <infoLinks>
             <infoLink name="Chosen Chaos Knight" hidden="false" type="profile" id="a1c5-88e1-864-2373" targetId="85b9-47da-b3a8-5731"/>
@@ -3289,6 +3344,12 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" value="10" field="7949-3916-997a-9cd6">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -3526,7 +3587,16 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <selectionEntry type="model" import="true" name="Chaos Warhound" hidden="false" id="b00f-f74-6825-5064" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="ea7f-6f8-ade3-cb37"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="3b85-fa67-ae83-93a5"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="3b85-fa67-ae83-93a5">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="ca91-724b-de52-a7b7" targetId="721d-36e3-388a-c0d6" collective="true" sortIndex="1">
               <constraints>
@@ -3892,7 +3962,16 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <selectionEntry type="model" import="true" name="Marauder Horsemen" hidden="false" id="e0dc-b7e8-e0a-6522" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="c598-5915-a915-29f8"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="7f19-b193-06b4-3232"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="10" field="7f19-b193-06b4-3232">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="958-184d-b5e9-b827" targetId="721d-36e3-388a-c0d6" collective="true" sortIndex="1">
               <constraints>
@@ -4289,6 +4368,17 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
       <costs>
         <cost name="pts" typeId="points" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="6bc1-4069-01ed-46c9"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="10" field="6bc1-4069-01ed-46c9">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink name="Chaos Steed" hidden="false" type="profile" id="43fa-5fb6-da9d-8a44" targetId="99d7-6f3c-861d-e7a9"/>
         <infoLink name="Base (30x60)" hidden="false" type="profile" id="3e31-203d-a352-865f" targetId="3a8b-1dd5-77fb-fdc3"/>
@@ -4690,6 +4780,17 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Warhorse" hidden="false" id="2cf0-fbb8-c47f-8ca7" collective="true" subType="mount">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="207c-61df-83e6-50b6"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="10" field="207c-61df-83e6-50b6">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink name="Warhorse" id="a1bb-46c0-ed9c-64eb" hidden="false" type="profile" targetId="f7c0-a79a-5983-6d17"/>
         <infoLink name="Base (30x60)" id="1b35-99a7-b241-71a5" hidden="false" type="profile" targetId="3a8b-1dd5-77fb-fdc3"/>
@@ -4728,7 +4829,16 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <selectionEntry type="model" import="true" name="Marauder Tribe Berserkers" hidden="false" id="e785-372d-863d-fc15" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="3f22-7c6c-fd21-1874"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="04d4-15c4-521a-2354"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="04d4-15c4-521a-2354">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="497b-d017-0fdc-1f49" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -4903,7 +5013,16 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <selectionEntry type="model" import="true" name="Marauder Tribe Huscarl" hidden="false" id="2f93-1f85-424b-1be7" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="a6f2-528e-125d-5e15"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="35b5-3836-5641-415c"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="10" field="35b5-3836-5641-415c">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="19bd-fe13-1220-149c" type="selectionEntry" targetId="721d-36e3-388a-c0d6" collective="true" sortIndex="1">
               <constraints>
@@ -5151,7 +5270,16 @@ Note that, should a Bretonnian army accept the challenge, it counts as having pr
         <selectionEntry type="model" import="true" name="Skin Wolf" hidden="false" id="9a63-2635-c2a8-8f28" sortIndex="1">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="bdf1-fd72-30fe-202a"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="518e-025e-33f5-4804"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="6" field="518e-025e-33f5-4804">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="cee6-3154-8f9e-b40b" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>

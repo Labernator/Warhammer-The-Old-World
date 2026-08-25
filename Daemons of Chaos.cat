@@ -1856,7 +1856,16 @@ Heavy infantry (character)        </profile>
           </entryLinks>
           <constraints>
             <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="726e8d42-2b9b450c"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="ea17-c6ff-6c17-8ab1"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="ea17-c6ff-6c17-8ab1">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Daemon of Khorne" hidden="false" id="53f2-d0a7-6fb8-88f9" targetId="88d6-6a25-670-e154" primary="false"/>
             <categoryLink name="Heavy Infantry" hidden="false" id="e058-65c0-9dc8-4a90" targetId="ca7e-d004-ccde-caf3" primary="false"/>
@@ -1985,7 +1994,16 @@ Heavy infantry (character)        </profile>
           </entryLinks>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="69922512-921f345c"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="4c62-8cd5-a640-223d"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="10" field="4c62-8cd5-a640-223d">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Daemon of Khorne" hidden="false" id="3079-9cf9-68da-5424" targetId="88d6-6a25-670-e154" primary="false"/>
             <categoryLink name="Heavy Cavalry" hidden="false" id="2195-9d72-f51d-e33a" targetId="5165-d052-cfc2-5887" primary="false"/>
@@ -2737,7 +2755,16 @@ Regular infantry (character)        </profile>
           </entryLinks>
           <constraints>
             <constraint type="min" value="7" field="selections" scope="parent" shared="true" id="4d632c84-73f85e4e"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="be06-76d3-2503-b391"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="be06-76d3-2503-b391">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Daemon of Nurgle" hidden="false" id="6057-b022-e20f-3d3" targetId="e20-3c11-13b5-e880" primary="false"/>
             <categoryLink name="Regular Infantry" hidden="false" id="7a87-3623-9ac0-5dc2" targetId="f3f7-ca43-674e-115f" primary="false"/>
@@ -2863,7 +2890,16 @@ Regular infantry (character)        </profile>
           </entryLinks>
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="326b4708-72138db2"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="c351-789c-c31e-6eed"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="6" field="c351-789c-c31e-6eed">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Daemon of Nurgle" hidden="false" id="c8f6-1fa2-befd-8396" targetId="e20-3c11-13b5-e880" primary="false"/>
             <categoryLink name="Monstrous Infantry" hidden="false" id="5c3b-a80a-3475-5e21" targetId="5c55-f9d6-b181-92f8" primary="false"/>
@@ -2927,7 +2963,16 @@ Regular infantry (character)        </profile>
           </entryLinks>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="91ed193d-7792aa73"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="55e6-0a4a-864c-e96a"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="6" field="55e6-0a4a-864c-e96a">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Daemon of Nurgle" hidden="false" id="bd13-5993-effd-2e9d" targetId="e20-3c11-13b5-e880" primary="false"/>
             <categoryLink name="Swarms" hidden="false" id="c818-3d12-4ee1-b00" targetId="db92-54fd-e023-d69f" primary="false"/>
@@ -3505,6 +3550,17 @@ Regular infantry (character)        </profile>
       <costs>
         <cost name="pts" typeId="points" value="16"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="a666-7ca8-f457-77d5"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="10" field="a666-7ca8-f457-77d5">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <entryLinks>
         <entryLink name="Hand Weapon" id="a72f-4b97-eed6-c999" hidden="false" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
           <constraints>
@@ -3545,7 +3601,16 @@ Regular infantry (character)        </profile>
           </entryLinks>
           <constraints>
             <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="147a700a-dc7f9134"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="6849-44f9-8b0f-d31b"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="6849-44f9-8b0f-d31b">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Daemon of Slaanesh" hidden="false" id="ee39-b981-e08d-4ebc" targetId="2955-25dc-92ce-6e4a" primary="false"/>
             <categoryLink name="Regular Infantry" hidden="false" id="4cd4-639b-cfa-b6ca" targetId="f3f7-ca43-674e-115f" primary="false"/>
@@ -3659,7 +3724,16 @@ Regular infantry (character)        </profile>
           </entryLinks>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="3224707e-d29083c8"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="68ed-c6b7-da5a-7f55"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="10" field="68ed-c6b7-da5a-7f55">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Daemon of Slaanesh" hidden="false" id="bbb5-aeba-9abd-7f8a" targetId="2955-25dc-92ce-6e4a" primary="false"/>
             <categoryLink name="Light Cavalry" hidden="false" id="c579-9e8a-63a9-7540" targetId="600c-7d08-5be1-fe0c" primary="false"/>
@@ -4318,7 +4392,16 @@ Regular infantry (character)        </profile>
           </entryLinks>
           <constraints>
             <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="b89c2980-469442ca"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="faf5-0cab-8e90-87a0"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="faf5-0cab-8e90-87a0">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Daemon of Tzeentch" hidden="false" id="c15f-c9de-f024-fe9c" targetId="a3d4-f3d0-3587-e55a" primary="false"/>
             <categoryLink name="Regular Infantry" hidden="false" id="2fc8-164f-90e4-fe9" targetId="f3f7-ca43-674e-115f" primary="false"/>
@@ -4437,7 +4520,16 @@ Regular infantry (character)        </profile>
           </entryLinks>
           <constraints>
             <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="cdb0c04-8db541ce"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="49e1-18a1-a66b-8c81"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="49e1-18a1-a66b-8c81">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Daemon of Tzeentch" hidden="false" id="37ab-74cd-63a1-7eab" targetId="a3d4-f3d0-3587-e55a" primary="false"/>
             <categoryLink name="Regular Infantry" hidden="false" id="8c3d-30bb-fa40-48a1" targetId="f3f7-ca43-674e-115f" primary="false"/>
@@ -4705,7 +4797,16 @@ Regular infantry (character)        </profile>
           </entryLinks>
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="694a56e7-3f5798b5"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="620e-e4a6-d807-9878"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="6" field="620e-e4a6-d807-9878">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Daemon of Tzeentch" hidden="false" id="c5bb-1c78-467d-dfd9" targetId="a3d4-f3d0-3587-e55a" primary="false"/>
             <categoryLink name="Swarms" hidden="false" id="87df-69b1-1c86-b023" targetId="db92-54fd-e023-d69f" primary="false"/>
@@ -4755,7 +4856,16 @@ Regular infantry (character)        </profile>
           </entryLinks>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="72672b40-7079368a"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="c987-a0dd-9f4c-110a"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="c987-a0dd-9f4c-110a">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Daemon of Tzeentch" hidden="false" id="e359-313e-c8cc-af25" targetId="a3d4-f3d0-3587-e55a" primary="false"/>
             <categoryLink name="War Beast" hidden="false" id="4675-a034-6cfa-cd33" targetId="19f9-8dd8-bba4-625b" primary="false"/>
@@ -5360,7 +5470,16 @@ Monstrous infantry (character)        </profile>
           </entryLinks>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="c8057e87-700e62d5"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="e6ea-50cf-7cdc-879e"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="e6ea-50cf-7cdc-879e">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="d999-7691-33a8-5ef3" targetId="f3f7-ca43-674e-115f" primary="false"/>
           </categoryLinks>
@@ -5882,6 +6001,17 @@ Monstrous infantry (character)        </profile>
       <costs>
         <cost name="pts" typeId="points" value="100"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="8244-c912-0106-08a5"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="6" field="8244-c912-0106-08a5">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Chariot Of Tzeentch" hidden="false" id="6661-32e0-21-edb5" collective="false">
       <profiles>

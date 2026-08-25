@@ -1804,7 +1804,16 @@ Note that this special rule is not cumulative. In other words, using it more tha
           </entryLinks>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="990789c3-dd4266f1"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="3ebd-016b-49e6-3910"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="3ebd-016b-49e6-3910">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Heavy Infantry" hidden="false" id="97d8-c14b-6114-16e4" targetId="ca7e-d004-ccde-caf3" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="ae8c-97de-fcbd-a4c0" targetId="may-have-armour"/>
@@ -1986,7 +1995,16 @@ Note that this special rule is not cumulative. In other words, using it more tha
           </entryLinks>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="d943b4bf-c168facd"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="4c22-e2ff-0eda-7a8a"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="4c22-e2ff-0eda-7a8a">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Heavy Infantry" hidden="false" id="6397-e3da-d610-310b" targetId="ca7e-d004-ccde-caf3" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="5a6-6615-c633-ce4f" targetId="may-have-armour"/>
@@ -2226,7 +2244,16 @@ Note that this special rule is not cumulative. In other words, using it more tha
           </entryLinks>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="493d8ee1-e568b2b7"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="50d7-ae8d-d436-12c7"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="6" field="50d7-ae8d-d436-12c7">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Monstrous Infantry" hidden="false" id="b280-ea34-fcb0-29fb" targetId="5c55-f9d6-b181-92f8" primary="false"/>
           </categoryLinks>
@@ -2346,7 +2373,16 @@ Note that this special rule is not cumulative. In other words, using it more tha
           </selectionEntryGroups>
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="8394720c-d5d59e56"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="50b2-e59d-3f93-1c0f"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="50b2-e59d-3f93-1c0f">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="988f-680b-951-d54c" targetId="f3f7-ca43-674e-115f" primary="false"/>
             <categoryLink name="MAY_HAVE_SHIELD" hidden="false" id="8ffe-7c06-827d-2878" targetId="may-have-shield"/>
@@ -2461,7 +2497,16 @@ Note that this special rule is not cumulative. In other words, using it more tha
           </entryLinks>
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="ce17864a-5a01f574"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="0767-11be-6d70-0559"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="0767-11be-6d70-0559">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="5808-6097-260d-fa33" targetId="f3f7-ca43-674e-115f" primary="false"/>
           </categoryLinks>
@@ -2559,7 +2604,16 @@ Note that this special rule is not cumulative. In other words, using it more tha
           </entryLinks>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="6987de6e-50a67578"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="4871-af19-890b-ecaf"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="10" field="4871-af19-890b-ecaf">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Light Cavalry" hidden="false" id="7d91-47a3-2af-511c" targetId="600c-7d08-5be1-fe0c" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="63ec-ca9e-60-fb4c" targetId="may-have-armour"/>
@@ -3684,7 +3738,16 @@ Note that this special rule is not cumulative. In other words, using it more tha
           </entryLinks>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="08b5-fe71-d975-7a3f"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="2e5c-a9a8-8531-f726"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="2e5c-a9a8-8531-f726">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Heavy Infantry" hidden="false" id="5c97-1d7f-2822-8f6b" targetId="ca7e-d004-ccde-caf3" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="658c-3085-f3e2-7406" targetId="may-have-armour"/>
@@ -3891,7 +3954,16 @@ Note that this special rule is not cumulative. In other words, using it more tha
           </entryLinks>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="269f-2bf2-25fa-1372"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="2dfe-8772-14af-bc76"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="2dfe-8772-14af-bc76">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Heavy Infantry" hidden="false" id="4a3a-c62b-4398-65b4" targetId="ca7e-d004-ccde-caf3" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="e726-308b-b03a-161e" targetId="may-have-armour"/>

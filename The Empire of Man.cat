@@ -1115,6 +1115,17 @@ Note that any special rules granted by these upgrades do not apply to the models
       </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Empire Warhorse" hidden="false" id="50f2-3c1-5900-c47f" subType="mount" collective="true">
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="5e19-c5d3-b1fe-037c"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="10" field="5e19-c5d3-b1fe-037c">
+          <comment>Battle March: maximum unit strength 20</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink name="Empire Warhorse" hidden="false" type="profile" id="3d83-8dec-5325-bfc9" targetId="880a-4d87-9f5f-b5c6"/>
         <infoLink name="Base (30x60)" hidden="false" type="profile" id="7521-e865-13fb-3d1d" targetId="3a8b-1dd5-77fb-fdc3"/>
@@ -2679,6 +2690,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <selectionEntry type="model" import="true" name="State Trooper" hidden="false" id="b804-2976-136-c0f1" sortIndex="1">
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="fe18-ea23-6c57-7161"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="1768-128e-57e1-91bc"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="d012-6674-9464-c3" targetId="721d-36e3-388a-c0d6" collective="true" sortIndex="1">
@@ -2727,6 +2739,12 @@ Note that any special rules granted by these upgrades do not apply to the models
             <modifier type="set" value="5" field="fe18-ea23-6c57-7161">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="551d-34fe-3832-416d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="20" field="1768-128e-57e1-91bc">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2848,6 +2866,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <selectionEntry type="model" import="true" name="Veteran State Trooper" hidden="false" id="1a33-6ef0-f7fb-db55" sortIndex="1">
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="9810-e931-71c4-b05f"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="9e9e-ad6e-bcb3-7c6b"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="fda0-3ac8-6c56-297b" targetId="721d-36e3-388a-c0d6" sortIndex="1">
@@ -2909,6 +2928,12 @@ Note that any special rules granted by these upgrades do not apply to the models
             <modifier type="set" value="5" field="9810-e931-71c4-b05f">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="551d-34fe-3832-416d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="20" field="9e9e-ad6e-bcb3-7c6b">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3053,6 +3078,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <selectionEntry type="model" import="true" name="State Missile Trooper" hidden="false" id="3e11-1ae1-1c1a-6094" sortIndex="1">
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="ba7-12d2-ca78-1865"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="6cbd-a04c-ddfd-482a"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="61d-371c-bf34-8ac8" targetId="721d-36e3-388a-c0d6" sortIndex="1">
@@ -3077,6 +3103,12 @@ Note that any special rules granted by these upgrades do not apply to the models
             <modifier type="set" value="5" field="ba7-12d2-ca78-1865">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="551d-34fe-3832-416d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="20" field="6cbd-a04c-ddfd-482a">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3376,6 +3408,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <selectionEntry type="model" import="true" name="Militia Fighter" hidden="false" id="bd77-7135-4fb7-304e" sortIndex="1">
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="b379-5e42-ead6-c377"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="3025-e43f-d01b-717d"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Throwing Weapon" hidden="false" type="selectionEntry" id="3bd2-cc3-7e1a-c367" targetId="9acb-1a87-176-5a2f" sortIndex="1">
@@ -3400,6 +3433,12 @@ Note that any special rules granted by these upgrades do not apply to the models
             <modifier type="set" value="5" field="b379-5e42-ead6-c377">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="551d-34fe-3832-416d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="20" field="3025-e43f-d01b-717d">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3479,7 +3518,16 @@ Note that any special rules granted by these upgrades do not apply to the models
         <selectionEntry type="model" import="true" name="Archer" hidden="false" id="3468-e5f3-a491-57bd" flatten="true" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="33dd-a84c-d044-da31"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="64de-8bc9-3a61-da1c"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="64de-8bc9-3a61-da1c">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="e40c-ca0e-7a65-508d" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -3600,7 +3648,16 @@ Note that any special rules granted by these upgrades do not apply to the models
         <selectionEntry type="model" import="true" name="Greatsword" hidden="false" id="7e71-cee2-bd77-a14c" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="2a56-8392-d942-8dca"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="fcd8-a50d-c052-422f"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="fcd8-a50d-c052-422f">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="364b-262a-ee8c-c6d" targetId="721d-36e3-388a-c0d6" sortIndex="3">
               <constraints>
@@ -3846,7 +3903,16 @@ Note that any special rules granted by these upgrades do not apply to the models
         <selectionEntry type="model" import="true" name="Flagellant" hidden="false" id="e935-b56-49e1-f787" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="66c9-f67a-e708-f1e3"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="fb6d-7d06-10f6-c2d8"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="fb6d-7d06-10f6-c2d8">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="b2ae-8b09-5574-a156" targetId="721d-36e3-388a-c0d6" sortIndex="2">
               <constraints>
@@ -3949,7 +4015,16 @@ Note that any special rules granted by these upgrades do not apply to the models
         <selectionEntry type="model" import="true" name="Pistolier" hidden="false" id="3044-842-7d8-1bf9" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="66fb-dc0-7a6e-735e"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="fae9-4367-cc79-1215"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="10" field="fae9-4367-cc79-1215">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="3a12-ce89-5d5-3c0f" targetId="721d-36e3-388a-c0d6" sortIndex="3">
               <constraints>
@@ -4150,7 +4225,16 @@ Note that any special rules granted by these upgrades do not apply to the models
         <selectionEntry type="model" import="true" name="Outrider" hidden="false" id="11e7-5a91-f723-a95c" sortIndex="1">
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="a33d-4a50-1fa-2bcf"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="1fdb-22ff-8d2d-7224"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="10" field="1fdb-22ff-8d2d-7224">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="13f0-dee7-accd-6767" targetId="721d-36e3-388a-c0d6" sortIndex="2">
               <constraints>
@@ -4308,6 +4392,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <selectionEntry type="model" import="true" name="Empire Knight" hidden="false" id="99fc-882a-4d6c-8c85" sortIndex="1">
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="c9c8-d36d-72ae-8209"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="cdcb-e69b-126f-1bc0"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="cf8b-64c-8ec0-869a" targetId="721d-36e3-388a-c0d6" sortIndex="2">
@@ -4440,6 +4525,12 @@ Note that any special rules granted by these upgrades do not apply to the models
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" value="10" field="cdcb-e69b-126f-1bc0">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -4641,6 +4732,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <selectionEntry type="model" import="true" name="Inner Circle Knight" hidden="false" id="e74f-2c1f-6e75-d2d0" sortIndex="1">
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="b131-62e4-cef4-e1f2"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="4925-d642-94b1-53dc"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="517a-61b0-9781-5397" targetId="721d-36e3-388a-c0d6" sortIndex="3">
@@ -4785,6 +4877,12 @@ Note that any special rules granted by these upgrades do not apply to the models
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" value="10" field="4925-d642-94b1-53dc">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -6328,6 +6426,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <selectionEntry type="model" import="true" name="Road Warden" hidden="false" id="fe17-ed26-c624-39d0" sortIndex="1" collective="false" flatten="false">
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="16a8-b639-f52f-bc8a"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="9e6d-ff6d-13f7-33b5"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="e2e8-9f54-d5e7-423d" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="2">
@@ -6368,6 +6467,12 @@ Note that any special rules granted by these upgrades do not apply to the models
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" value="10" field="9e6d-ff6d-13f7-33b5">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <selectionEntryGroups>
@@ -6747,7 +6852,16 @@ Note that any special rules granted by these upgrades do not apply to the models
         <selectionEntry type="model" import="true" name="Teutogen Guard" hidden="false" id="06b8-0787-891c-7ff7" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="3b0a-8ee2-e5d2-ab07"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="d7db-5c91-7cca-970c"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="d7db-5c91-7cca-970c">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="84bb-ba96-3c3d-8589" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="4">
               <constraints>
@@ -7333,6 +7447,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <selectionEntry type="model" import="true" name="State Trooper" hidden="false" id="960d-4c69-c34d-0fbb" sortIndex="1">
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="2207-ac6a-71ef-2724"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="b521-0aa3-f249-7939"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="27e4-072d-8ec9-244e" type="selectionEntry" targetId="721d-36e3-388a-c0d6" collective="true" sortIndex="1">
@@ -7370,6 +7485,12 @@ Note that any special rules granted by these upgrades do not apply to the models
             <modifier type="set" value="5" field="2207-ac6a-71ef-2724">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="551d-34fe-3832-416d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="20" field="b521-0aa3-f249-7939">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7459,6 +7580,7 @@ Note that any special rules granted by these upgrades do not apply to the models
                   <constraints>
                     <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="5417-befa-bc64-6c01"/>
                     <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d19f-458c-2606-abd0"/>
+                    <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="9280-a54e-bc77-9e3d"/>
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Hand Weapon" hidden="false" id="977f-e91c-c329-f809" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
@@ -7492,6 +7614,12 @@ Note that any special rules granted by these upgrades do not apply to the models
                       <repeats>
                         <repeat value="2" repeats="1" field="selections" scope="root-entry" childId="960d-4c69-c34d-0fbb" shared="true" roundUp="false" includeChildSelections="false"/>
                       </repeats>
+                    </modifier>
+                    <modifier type="set" value="20" field="9280-a54e-bc77-9e3d">
+                      <comment>Battle March: maximum unit strength 20</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+                      </conditions>
                     </modifier>
                   </modifiers>
                   <categoryLinks>
@@ -7628,6 +7756,7 @@ Note that any special rules granted by these upgrades do not apply to the models
                   <constraints>
                     <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="fda2-4f3c-d463-7c51"/>
                     <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1a68-67e7-bd43-605a"/>
+                    <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="fe5c-443b-7ff1-6d0d"/>
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Hand Weapon" hidden="false" id="d41a-f63d-1815-611a" type="selectionEntry" targetId="721d-36e3-388a-c0d6" collective="true" sortIndex="1">
@@ -7661,6 +7790,12 @@ Note that any special rules granted by these upgrades do not apply to the models
                       <repeats>
                         <repeat value="2" repeats="1" field="selections" scope="root-entry" childId="960d-4c69-c34d-0fbb" shared="true" roundUp="false" includeChildSelections="false"/>
                       </repeats>
+                    </modifier>
+                    <modifier type="set" value="20" field="fe5c-443b-7ff1-6d0d">
+                      <comment>Battle March: maximum unit strength 20</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+                      </conditions>
                     </modifier>
                   </modifiers>
                   <categoryLinks>
@@ -7754,6 +7889,7 @@ Note that any special rules granted by these upgrades do not apply to the models
         <selectionEntry type="model" import="true" name="Veteran State Trooper" hidden="false" id="c6de-08e9-e0db-1be5" sortIndex="1">
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="af28-7415-5f0d-32c7"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="b3fa-5480-85bf-b3a0"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" id="09f7-f80f-8721-a722" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
@@ -7804,6 +7940,12 @@ Note that any special rules granted by these upgrades do not apply to the models
             <modifier type="set" value="5" field="af28-7415-5f0d-32c7">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="551d-34fe-3832-416d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="20" field="b3fa-5480-85bf-b3a0">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7907,6 +8049,7 @@ Note that any special rules granted by these upgrades do not apply to the models
                   <constraints>
                     <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="e4ac-f92b-1132-8136"/>
                     <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="63ed-830d-a7fc-fa81"/>
+                    <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="6974-b05b-ac8e-f37d"/>
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Hand Weapon" hidden="false" id="88c7-cd8f-fb7e-76c8" type="selectionEntry" targetId="721d-36e3-388a-c0d6" collective="true" sortIndex="1">
@@ -7940,6 +8083,12 @@ Note that any special rules granted by these upgrades do not apply to the models
                       <repeats>
                         <repeat value="2" repeats="1" field="selections" scope="root-entry" childId="c6de-08e9-e0db-1be5" shared="true" roundUp="false" includeChildSelections="false"/>
                       </repeats>
+                    </modifier>
+                    <modifier type="set" value="20" field="6974-b05b-ac8e-f37d">
+                      <comment>Battle March: maximum unit strength 20</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+                      </conditions>
                     </modifier>
                   </modifiers>
                   <categoryLinks>
@@ -8005,6 +8154,7 @@ Note that any special rules granted by these upgrades do not apply to the models
                   <constraints>
                     <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="d2dc-54f6-ee74-0f4c"/>
                     <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="350e-ff7d-0b21-a21f"/>
+                    <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="7b18-5d92-5736-bc9d"/>
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Hand Weapon" hidden="false" id="2d08-3a11-cbad-1b70" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
@@ -8038,6 +8188,12 @@ Note that any special rules granted by these upgrades do not apply to the models
                       <repeats>
                         <repeat value="2" repeats="1" field="selections" scope="root-entry" childId="c6de-08e9-e0db-1be5" shared="true" roundUp="false" includeChildSelections="false"/>
                       </repeats>
+                    </modifier>
+                    <modifier type="set" value="20" field="7b18-5d92-5736-bc9d">
+                      <comment>Battle March: maximum unit strength 20</comment>
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+                      </conditions>
                     </modifier>
                   </modifiers>
                   <categoryLinks>

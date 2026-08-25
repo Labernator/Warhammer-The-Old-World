@@ -105,7 +105,16 @@
           <constraints>
             <constraint type="max" value="15" field="selections" scope="parent" shared="true" id="e57d-f3ba-f6c6-bcb5"/>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="1599-3edb-f715-f3ea"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="8f3d-4118-a159-616f"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="6" field="8f3d-4118-a159-616f">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="1220-fd90-232b-8d51" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -561,7 +570,16 @@
           <constraints>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="69a8-4b23-bd36-5d0f"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3701-f664-3095-faca"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="8c73-2a08-a1c7-26c6"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="6" field="8c73-2a08-a1c7-26c6">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Troll Vomit" hidden="false" type="selectionEntry" id="1fd8-ef0c-9449-1e09" targetId="b5d4-7050-5328-3003" sortIndex="3">
               <constraints>

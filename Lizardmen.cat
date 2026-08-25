@@ -1563,7 +1563,16 @@ This character has a 5+ Ward save against any wounds suffered</characteristic>
           </entryLinks>
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="a827d0f-4c79d19d"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="8144-dd36-47d9-6a1c"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="8144-dd36-47d9-6a1c">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Heavy Infantry" hidden="false" id="7449-743a-ba3a-c9cb" targetId="ca7e-d004-ccde-caf3" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="8711-e18-92f-b0cb" targetId="may-have-armour"/>
@@ -1715,7 +1724,16 @@ This character has a 5+ Ward save against any wounds suffered</characteristic>
           </entryLinks>
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="b584b26e-8e1ca978"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="f035-f121-7c26-fb64"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="f035-f121-7c26-fb64">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Heavy Infantry" hidden="false" id="52b9-9b03-2297-d8c1" targetId="ca7e-d004-ccde-caf3" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="608c-2ad-9d1c-e01e" targetId="may-have-armour"/>
@@ -1856,7 +1874,16 @@ This character has a 5+ Ward save against any wounds suffered</characteristic>
           </entryLinks>
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="a5b44ee9-a8b93bbf"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="8ce4-5bde-1bcc-b363"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="8ce4-5bde-1bcc-b363">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="2a48-17ae-cb-652c" targetId="f3f7-ca43-674e-115f" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="d7af-2e9a-b7a6-6ccb" targetId="may-have-armour"/>
@@ -2035,7 +2062,16 @@ This character has a 5+ Ward save against any wounds suffered</characteristic>
           </entryLinks>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="c381519e-41495868"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="b30e-80a3-e62f-7517"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="b30e-80a3-e62f-7517">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="6a03-612a-6826-bd60" targetId="f3f7-ca43-674e-115f" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="7fd1-b9ce-3be1-4efd" targetId="may-have-armour"/>
@@ -2118,7 +2154,16 @@ This character has a 5+ Ward save against any wounds suffered</characteristic>
           </entryLinks>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="520e4f81-9adcbed7"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="6b3d-428f-3021-01e5"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="6" field="6b3d-428f-3021-01e5">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Monstrous Infantry" hidden="false" id="9f48-d91a-7e03-225b" targetId="5c55-f9d6-b181-92f8" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="6841-740e-f3ea-da31" targetId="may-have-armour"/>
@@ -2196,7 +2241,16 @@ This character has a 5+ Ward save against any wounds suffered</characteristic>
           </entryLinks>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="7566dfa1-86417d77"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="e92f-54c6-7664-9c44"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="6" field="e92f-54c6-7664-9c44">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Swarms" hidden="false" id="9913-21ed-433e-a378" targetId="db92-54fd-e023-d69f" primary="false"/>
           </categoryLinks>
@@ -2252,7 +2306,16 @@ This character has a 5+ Ward save against any wounds suffered</characteristic>
           </entryLinks>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="4ac75103-f249f431"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="22c3-cda8-b3c1-e5b5"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="22c3-cda8-b3c1-e5b5">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="d028-9335-af2b-6282" targetId="f3f7-ca43-674e-115f" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="57fb-5298-8cad-f657" targetId="may-have-armour"/>
@@ -2286,12 +2349,19 @@ This character has a 5+ Ward save against any wounds suffered</characteristic>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="489b-2078-8bf-e2cd"/>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1dc0-ede8-4c0e-65ec"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="c6a9-102b-7c8d-ae0e"/>
           </constraints>
           <modifiers>
             <modifier type="increment" value="1" field="1dc0-ede8-4c0e-65ec">
               <repeats>
                 <repeat value="3" repeats="1" field="selections" scope="parent" childId="dac69476-d2c36b40" shared="true" roundUp="false" id="a7ec-7929-92b2-3455" includeChildSelections="true"/>
               </repeats>
+            </modifier>
+            <modifier type="set" value="20" field="c6a9-102b-7c8d-ae0e">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <categoryLinks>
@@ -2347,7 +2417,16 @@ This character has a 5+ Ward save against any wounds suffered</characteristic>
           </entryLinks>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="4d87a1ce-8a1e33d8"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="9f8c-a9a7-8992-c641"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="9f8c-a9a7-8992-c641">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Regular Infantry" hidden="false" id="3f7d-9996-b28-37e9" targetId="f3f7-ca43-674e-115f" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="575b-72bc-db6c-af8e" targetId="may-have-armour"/>
@@ -2382,12 +2461,19 @@ This character has a 5+ Ward save against any wounds suffered</characteristic>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c229-f050-5dff-6e5b"/>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="366d-2958-49ea-c03b"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="27e3-4ff3-8179-75c4"/>
           </constraints>
           <modifiers>
             <modifier type="increment" value="1" field="366d-2958-49ea-c03b">
               <repeats>
                 <repeat value="3" repeats="1" field="selections" scope="parent" childId="b2483707-ed775755" shared="true" roundUp="false" id="2881-efcc-15c-5d7d" includeChildSelections="true"/>
               </repeats>
+            </modifier>
+            <modifier type="set" value="20" field="27e3-4ff3-8179-75c4">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <categoryLinks>
@@ -2453,7 +2539,16 @@ This character has a 5+ Ward save against any wounds suffered</characteristic>
           </entryLinks>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="d24e18ce-aef8f2d8"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="7742-dd6d-56d2-5ec4"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="10" field="7742-dd6d-56d2-5ec4">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink name="Heavy Cavalry" hidden="false" id="b334-644d-75d8-710e" targetId="5165-d052-cfc2-5887" primary="false"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="29b8-d632-6f31-a8b" targetId="may-have-armour"/>
@@ -9290,6 +9385,9 @@ This character has a 5+ Ward save against any wounds suffered</characteristic>
           <costs>
             <cost name="pts" typeId="points" value="18"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="7273-5e9e-5d4f-781f"/>
+          </constraints>
           <entryLinks>
             <entryLink name="Hand Weapon" id="accab88f-97a4311d" hidden="false" type="selectionEntry" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -9338,6 +9436,12 @@ This character has a 5+ Ward save against any wounds suffered</characteristic>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" value="10" field="7273-5e9e-5d4f-781f">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>

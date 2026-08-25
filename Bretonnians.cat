@@ -957,6 +957,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
           </costs>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="f8a4-8eb9-ab35-cc26"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="4d70-d018-7430-11e4"/>
           </constraints>
           <infoLinks>
             <infoLink name="Grail Knight" hidden="false" type="profile" id="d84a-8d19-f6e8-9612" targetId="cd5f-980c-2da9-31b"/>
@@ -1005,6 +1006,12 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" value="10" field="4d70-d018-7430-11e4">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -2466,7 +2473,16 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
         <selectionEntry type="model" import="true" name="Knight of the Realm" hidden="false" id="b613-e704-768b-1656" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="7a23-182a-16e8-88c5"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="76da-7286-c67b-4bfe"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="76da-7286-c67b-4bfe">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="1aed-bb45-7c77-f1fa" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -2684,7 +2700,16 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
         <selectionEntry type="model" import="true" name="Squire" hidden="false" id="2cb8-9b38-a4dd-f6f8" sortIndex="1">
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="ccf2-6bc9-c624-e4ec"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="730f-7e14-6629-dc79"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="730f-7e14-6629-dc79">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="a218-c248-eb76-2473" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -2821,7 +2846,16 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
         <selectionEntry type="model" import="true" name="Man-At-Arms" hidden="false" id="3ddf-271a-aaec-73eb" sortIndex="1">
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="929b-d3f9-201e-b299"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="7248-50fd-4e4d-0416"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="7248-50fd-4e4d-0416">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="1205-8ca8-c161-6e1d" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -2991,7 +3025,16 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
         <selectionEntry type="model" import="true" name="Peasant Bowman" hidden="false" id="6a73-7214-2d4f-1e3d" sortIndex="1" flatten="true">
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="6563-c996-9a68-82f4"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="03b9-9db5-1793-f17d"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="03b9-9db5-1793-f17d">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="f6e1-5518-da09-93ba" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -3168,7 +3211,16 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="2f58-cc90-653d-a779"/>
             <constraint type="max" value="30" field="selections" scope="parent" shared="true" id="2466-4ac4-738c-462"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="3343-0e2f-241e-3d66"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="3343-0e2f-241e-3d66">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <entryLinks>
             <entryLink import="true" name="Hand Weapon" hidden="false" type="selectionEntry" id="6fcd-e107-37ce-e365" targetId="721d-36e3-388a-c0d6" sortIndex="1">
               <constraints>
@@ -3287,6 +3339,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
           </costs>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="286d-68f7-67d5-78ae"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="6cb2-c405-c444-0f4f"/>
           </constraints>
           <infoLinks>
             <infoLink name="Knight Errant" hidden="false" type="profile" id="859f-9239-670-f379" targetId="533a-c6fe-ffd6-47a2"/>
@@ -3335,6 +3388,12 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" value="10" field="6cb2-c405-c444-0f4f">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <selectionEntryGroups>
@@ -3523,6 +3582,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
           </costs>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="612b-4960-c175-6200"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="1b2e-29e8-5042-3eec"/>
           </constraints>
           <infoLinks>
             <infoLink name="Mounted Knight of the Realm" hidden="false" type="profile" id="91d4-4ea6-8dca-da61" targetId="9271-5b36-a12e-5eaf"/>
@@ -3571,6 +3631,12 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" value="10" field="1b2e-29e8-5042-3eec">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <selectionEntryGroups>
@@ -3757,6 +3823,7 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
           </costs>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="a78f-b3f5-334d-8935"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="a941-4b87-1487-fd56"/>
           </constraints>
           <infoLinks>
             <infoLink name="Questing Knight" hidden="false" type="profile" id="432b-5914-3a5c-80cd" targetId="c729-d2f5-ca30-731b"/>
@@ -3805,6 +3872,12 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" value="10" field="a941-4b87-1487-fd56">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -4165,7 +4238,16 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
           </costs>
           <constraints>
             <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="8c28-d8f9-19e4-6ea1"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="c03f-c201-bf9f-c91d"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="10" field="c03f-c201-bf9f-c91d">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <infoLinks>
             <infoLink name="Mounted Yeomen" hidden="false" type="profile" id="cae0-b669-fbe8-440a" targetId="b35b-5c81-31e-bcc"/>
           </infoLinks>
@@ -4820,7 +4902,16 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
           </selectionEntryGroups>
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="0abc-b652-b3c6-7fc7"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="18e3-7783-f427-594c"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="18e3-7783-f427-594c">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink targetId="f3f7-ca43-674e-115f" id="e356-ba8a-7e3d-9f" primary="false" name="Regular Infantry"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="9dbd-7a59-1aef-a836" targetId="may-have-armour"/>
@@ -5324,7 +5415,16 @@ A unit with this Chivalrous Vow cannot be joined by a character with the Peasant
           </selectionEntryGroups>
           <constraints>
             <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="b0a90ddf-14a22e6d"/>
+            <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="f490-e529-19f4-20e3"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="20" field="f490-e529-19f4-20e3">
+              <comment>Battle March: maximum unit strength 20</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e40a-36c4-0c66-472a" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <categoryLinks>
             <categoryLink targetId="f3f7-ca43-674e-115f" id="c8e6-6cb0-1577-d9c4" primary="false" name="Regular Infantry"/>
             <categoryLink name="MAY_HAVE_ARMOUR" hidden="false" id="294e-4e91-f55c-d2a2" targetId="may-have-armour"/>
